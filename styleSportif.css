@@ -117,6 +117,14 @@ main h2:nth-of-type(2){
 main > h2,main a:nth-of-type(1) > img,.align-container > h2{
     margin-left:75px;
 }
+main > table:nth-of-type(1){
+    width: 500px;
+    height: 150x;
+}
+main > table:nth-of-type(1) tr img{
+    width: 120px;
+    height: 50px;
+}
 /* Les cards */
 .card{
     background:linear-gradient(180deg,#1AA3D9,#223059);
@@ -492,7 +500,10 @@ footer > hr{
         background-repeat: no-repeat;
         padding-top: 100px;
     }
-    li, p, #Resultat > table h2, #Resultat > table h3{
+    .header{
+        display: none;
+    }
+    li, p{
         font-size: 14px;
     }
     h1{
@@ -515,17 +526,40 @@ footer > hr{
         border-radius: 30px;
     }
     img{
-        border-radius: 30px;
+        border-radius: 10px;
         width: auto;
         height: auto;
     }
-    section > div > div{
+    a > img{
+        width: 50px;
+        height: 50px;
+    }
+    section:nth-of-type(1){
         flex-direction: column;
         padding: .5em;
         margin: auto;
     }
+    section:nth-of-type(1) > article img{
+        height:20px;
+        width: 20px;
+    }
+    main > table:first-child {
+        width: 100% !important;
+    }
+    main > table:nth-of-type(1){
+        width: auto;
+    }
     #toggle-matches{
+        width: 20px;
+    }
+    .text{
         display: none;
+    }
+    .align-container{
+        gap: 10px;
+    }
+    .align-container > h2{
+        font-size: 18px;
     }
     footer{
         background-image: url(images/screenshot_footer_428.png);
@@ -533,16 +567,8 @@ footer > hr{
     }
     footer *{
         font-size: 7px;
+        display: none;
     }
-    footer h4{
-        font-size: 10px;
-    }
-    footer div{
-        margin-top: 2.5em;
-    }
-    footer > div{
-        padding: 0 4em 0 11em;
-    }   
     footer hr {
         margin: .25em auto;
     }
