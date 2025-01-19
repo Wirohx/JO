@@ -3,583 +3,547 @@
     src: url(Fonts/BrunoAce-Regular.ttf);
 }
 /* Typographie générale */
-table tr > th, h2, h1, .team > p, .score, nav > p, footer h4, footer > aside:last-of-type > p, .menu-item p, .button{
-    font-family: 'BrunoAce';
+table tr > th,h2,h1,.team > p,.score,nav > p,footer h4,footer > aside:last-of-type > p,.menu-item p,.button{
+    font-family:'BrunoAce';
 }
-
-p, table tr > td, .team span, .card h2, footer > aside:first-child > p {
-    font-family: 'Inter';
+p,table tr > td,.team span,.card h2,footer > aside:first-child > p{
+    font-family:'Inter';
 }
-
-section, .match-info , table{
-    margin: auto;
+section,.match-info,table{
+    margin:auto;
 }
-
 body{
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-    background-color: #000000;
+    display:flex;
+    justify-content:center;
+    margin:0;
+    padding:0;
+    background-color:#000;
 }
 main{
-    background-color: #F2F2F2;
-    width: 1440px;
-}
-
+    background-color:#F2F2F2;
+    width:1440px;
+}  
 header > img{
-    display: block;
-    margin: auto;
+    display:block;
+    margin:auto;
 }
-
-button {
-    background-color: #223059; 
-    border: none;
-    padding: 10px 13px; 
-    border-radius: 20px; 
-    cursor: pointer;
-    display: flex;
-    color: white;
-    margin: 10px;
-    align-content: center;
+button{
+    background-color:#223059;
+    border:none;
+    padding:10px 13px;
+    border-radius:20px;
+    cursor:pointer;
+    display:flex;
+    color:#fff;
+    margin:10px;
+    align-content:center;
 }
-      
 button:hover i{
-     color: #D9C179;
+    color:#D9C179;
 }
-
-/* Sections */
-section:nth-of-type(1), main section:nth-of-type(2) {
-    display: flex;
-    flex-direction: row;
-    background-color: #223059;
-    border-radius: 45px;
-    justify-content: center;
-    margin: 50px auto;
-    color: white;
-    width: 50%;
+/* Les sections */
+section:nth-of-type(1),main section:nth-of-type(2){
+    display:flex;
+    flex-direction:row;
+    background-color:#223059;
+    border-radius:45px;
+    justify-content:center;
+    margin:50px auto;
+    color:#fff;
+    width:50%;
 }
-
-section:nth-of-type(1) {
-    border-radius: 45px;
+section:nth-of-type(1){
+    border-radius:45px;
 }
-
 section > img{
-    border-radius: 90px;
-    margin: 50px;
+    border-radius:90px;
+    margin:50px;
 }
-
-main > section:first-of-type > p:last-of-type {
-    color: #F2F2F2; /* Exemple de style */
-    font-weight: bold;
-    cursor: pointer;
-}
-
+main > section:first-of-type > p:last-of-type{
+    color:#F2F2F2;
+    font-weight:700;
+    cursor:pointer;
+}  
 section article{
-    align-content: center;
+    align-content:center;
 }
-
 main section:nth-of-type(2){
-    display: flex;
-    flex-direction: row;
-    gap: 20px; /* Espace entre les articles */
-    background-color: #223059;
-    color: #D9C179;
-    border-radius: 45px;
-    margin-bottom: 50px;
-    height: auto;
-    width: 50%;
+    display:flex;
+    flex-direction:row;
+    gap:20px;
+    background-color:#223059;
+    color:#D9C179;
+    border-radius:45px;
+    margin-bottom:50px;
+    height:auto;
+    width:50%;
 }
-
-main section:nth-of-type(2) article {
-    flex: 1;
-    background-color: #D9C179;
-    color: black;
-    border-radius: 45px;
-    padding: 5px;
-    margin: 20px;
-    text-align: start;
-    overflow: hidden;
+main section:nth-of-type(2) article{
+    flex:1;
+    background-color:#D9C179;
+    color:#000;
+    border-radius:45px;
+    padding:5px;
+    margin:20px;
+    text-align:start;
+    overflow:hidden;
 }
 main section:nth-of-type(2) h2{
-    text-align: center;
+    text-align:center;
 }
-
+/* Les tableaux */
 table tbody{
-    background-color: #ffffff;
-    border-left: 2px solid #000;
-    border-right: 2px solid #000;
-    text-align: center;
+    background-color:#fff;
+    border-left:2px solid #000;
+    border-right:2px solid #000;
+    text-align:center;
 }
-
 table{
-    border-collapse: collapse;
+    border-collapse:collapse;
 }
-
-table tr > th, table tr > td{
-    font-size: larger;
+table tr > th,table tr > td{
+    font-size:larger;
 }
 main h2:nth-of-type(2){
-    margin-top: 75px;
+    margin-top:75px;
 }
-
 h1{
-    text-align: center;
-    margin: 50px;
+    text-align:center;
+    margin:50px;
 }
-
 main h2:nth-of-type(2){
-    line-height: 1em;
+    line-height:1em;
 }
-
-main > h2, main a:nth-of-type(1) > img, .align-container > h2{
-    margin-left: 75px;
+main > h2,main a:nth-of-type(1) > img,.align-container > h2{
+    margin-left:75px;
 }
-
-/* Carte principale */
-.card {
-    background: linear-gradient(180deg, #1AA3D9, #223059);
-    border-radius: 90px;
-    color: white;
-    text-align: center;
-    padding: 20px 30px;
-    width: 400px; /* Garde une largeur fixe pour les cartes */
-    transition: all 0.3s ease-in-out;
+/* Les cards */
+.card{
+    background:linear-gradient(180deg,#1AA3D9,#223059);
+    border-radius:90px;
+    color:#fff;
+    text-align:center;
+    padding:20px 30px;
+    width:400px;
+    transition:all .3s ease-in-out;
 }
-
-.match-section {
-    display: flex;
-    flex-wrap: wrap; /* Permet aux éléments de passer à la ligne */
-    justify-content: center; /* Centre les lignes d'éléments */
-    gap: 30px; /* Espacement uniforme entre les conteneurs */
-    margin: 20px auto; /* Ajoute un espacement autour de la section */
-    
+.match-section{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:30px;
+    margin:20px auto;
 }
-
-.match-container {
-    display: flex;
-    flex-direction: column; /* Empile la carte et le tableau verticalement */
-    align-items: center; /* Centre les éléments horizontalement */
-    flex: 1 1 calc(50% - 30px); /* Deux cartes par ligne par défaut */
-    box-sizing: border-box; /* Inclut le padding dans la largeur */
+.match-container{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    flex:1 1 calc(50% - 30px);
+    box-sizing: border-box;
 }
+.match-table,table,main section:nth-of-type(2){
+    margin-top:50px;
+}
+.card,.match-table,.dropdown-menu{
+    display:none;
+}
+a:visited,a{
+    color:#fff;
+    text-decoration:none;
+}
+.card:hover{
+    cursor:pointer;
+    transform:scale(1.1);
+    z-index:10;
+    box-shadow:10px 10px 20px #4fB6B5;
+}
+.card h2{
+    font-size:1.5em;
+    margin-bottom:20px;
+}
+.match-info{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+}
+.team{
+    text-align:center;
+}
+.team img{
+    width:50px;
+    height:auto;
+    border-radius:5px;
+    margin-bottom:5px;
+}
+.team p{
+    font-size:.9em;
+    margin:0;
+}
+.team span{
+    font-weight:700;
+    font-size:1em;
+}
+.score{
+    display:flex;
+    align-items:center;
+    font-size:1.8em;
+    gap:5px;
+}
+.phase{
+    font-size:1em;
+    color:#dcdcdc;
+    margin-top:10px;
+    border-bottom:1px solid #F2F2F2;
+    padding-bottom:5px;
+}
+main hr:nth-of-type(1),main hr:nth-of-type(2){
+    border:1px solid #000;
+    width:90%
+}
+a > img:hover{
+    cursor:pointer;
+    transform:scale(1.1);
+}
+a > img{
+    transition:all .3s ease-in-out;
+    margin:20px;
+}
+/* La barre de navigation*/
+nav{
+    display:inline-flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    position:sticky;
+    top:0;
+    background-color:#D9C179;
+    justify-content:space-around;
+    width:100%;
+    z-index:999;
+}
+nav > p{
+    background-color:#223059;
+    border-radius:90px;
+    color:#f2f2f2;
+    padding:7px;
+    text-transform:uppercase;
+}
+nav > p:hover{
+    color:#D9C179;
+    cursor:pointer;
+}
+.jeux-olympiques{
+    display:flex;
+    justify-content:space-between;
+    color:#F2F2F2;
+}
+.menu-container{
+    position:relative;
+    display:inline-block;
+    border-radius:5px;
+}
+.menu-item p{
+    color:#F2F2F2;
+    cursor:pointer;
+    background-color:#223059;
+    border-radius:90px;
+    padding:7px;
+    text-transform:uppercase;
+}
+.menu-item p:hover{
+    color:#D9C179;
+}
+.dropdown-menu{
+    position:absolute;
+    top:100%;
+    left:0;
+    background-color:#223059;
+    color:#fff;
+    width:200px;
+    padding:10px 0;
+    list-style-type:none;
+    margin:0;
+    border-radius:4px;
+    transition:opacity .3s ease-in-out;
+    max-height:280px;
+    overflow-y:auto;
+}
+.dropdown-menu li{
+    padding:8px 20px;
+    border-bottom:1px solid #F2F2F2;
+    cursor:pointer;
+    text-decoration:none;
+}
+.dropdown-menu > li > a{
+    color:#fff;
+}
+.dropdown-menu > li > a:hover{
+    color:#D9C179;
+}
+.dropdown-menu li:hover{
+    background-color:#3a4a73;
+    color:#D9C179;
 
-@media screen and (max-width: 1200px) {
-    .match-container {
-        flex: 1 1 100%; /* Une seule carte par ligne sur écrans étroits */
+}.menu-item:hover .dropdown-menu{
+    display:block;
+    opacity:1;
+}
+.menu-container:hover .dropdown-menu{
+    display:block;
+    opacity:1;
+}
+::-webkit-scrollbar{
+    width:12px;
+    background-color:#3A4A73;
+}
+::-webkit-scrollbar-track{
+    border-radius:3px;
+    background-color:transparent;
+}
+::-webkit-scrollbar-thumb{
+    border-radius:5px;
+    background:linear-gradient(180deg,#3A4A73,#223059);
+    border:2px solid #000;
+}
+.toggle-matches:hover{
+    cursor:pointer;
+}
+.align-container{
+    display:flex;
+    align-items:center;
+    gap:840px;
+}
+.align-container > h2{
+    font-size:24px;
+    line-height:1px;
+}
+/* Le footer */
+footer p{
+    position:relative;
+    line-height:.5em;
+    cursor:pointer;
+}
+footer p span{
+    position:relative;
+    display:inline;
+}
+footer p span::after{
+    content:'';
+    position:absolute;
+    left:0;
+    bottom:-2px;
+    height:1px;
+    width:0;
+    background-color:#F2F2F2;
+    transition:width .3s ease-in-out;
+}
+footer p span:hover::after{
+    width:100%;
+}
+footer > aside:first-child{
+    position:relative;
+    height:fit-content;
+    width:fit-content;
+    left:250px;
+    top:400px;
+    color:#F2F2F2;
+}
+footer > aside:nth-child(2){
+    position:relative;
+    height:fit-content;
+    width:fit-content;
+    left:650px;
+    top:235px;
+    color:#F2F2F2;
+}
+footer > aside:last-of-type{
+    position:relative;
+    display:inline-flex;
+    gap:30px;
+    top:375px;
+    left:250px;
+    color:#f2f2f2;
+    margin:0;
+}
+footer > hr{
+    position:relative;
+    border:1px solid #F2F2F2!important;
+    width:70%;
+    top:380px;
+}
+/* Le bouton voir/masquer ses matchs*/
+.button{position:relative;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    padding:10px 20px;
+    font-size:16px;
+    border-radius:50px;
+    overflow:hidden;
+    cursor:pointer;
+    left:0;
+}
+.button .text{
+    margin-right:40px;
+    position:relative;
+    z-index:2;
+}
+.button .circle{
+    position:absolute;
+    right:0;width:40px;
+    height:40px;
+    background-color:#000;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    z-index:1;
+}
+.button .circle .arrow{
+    font-size:14px;
+    color:#F2F2F2;
+    z-index:3;
+}
+.button:hover{
+    background-color:#000;
+    color:#F2F2F2;
+}
+.button:hover .text{
+    color:#F2F2F2;
+}
+.button:hover .circle{
+    width:150px;
+    height:50px;
+    right:0;
+    background-color:transparent;
+    border-radius:50px;
+}
+.button:hover .circle .arrow{
+    position:absolute;
+    right:10px;
+}
+/*Les medias querys pour la responsivité */
+@media screen and (max-width: 1200px){
+    .match-container{
+        flex:1 1 100%;
     }
 }
-@media screen and (max-width: 470px) {
-    .card {
-        display: flex;
-        flex-direction: column; /* Organise les éléments en colonne */
-        align-items: center; /* Centre les éléments horizontalement */
-        justify-content: center; /* Centre les éléments verticalement */
-        align-content: center;
-        width: 250px;
-        height: auto;
+@media screen and (max-width: 470px){
+    .card{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+        align-content:center;
+        width:250px;height:auto;
     }
-
-    .card > * { /* S'assure que tous les enfants directs de .card prennent la nouvelle disposition */
-        margin: 10px 0; /* Ajoute de l'espacement vertical entre les éléments */
+    .card > *{
+        margin:10px 0;
     }
-
     .score{
-        font-size: 1.5em !important;
+        font-size:1.5em!important;
     }
 }
 @media screen and(max-width: 620px){
     .match-table{
-        display: flex;
-        flex-direction: column; /* Organise les éléments en colonne */
-        align-items: center; /* Centre les éléments horizontalement */
-        justify-content: center; /* Centre les éléments verticalement */
-        align-content: center;
-        width: 250px !important;
-        height: auto !important;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+        align-content:center;
+        width:250px!important;
+        height:auto!important;
     }
 }
-@media screen and (max-width: 732px) {
-    main section:nth-of-type(2) {
-        flex-direction: column; /* Empilage vertical pour les petits écrans */
-        gap: 15px; /* Réduction de l'espace entre les éléments */
-        
+@media screen and (max-width: 732px){
+    main section:nth-of-type(2){
+        flex-direction:column;
+        gap:15px;
     }
     main section:nth-of-type(2) article{
-        display: flex;
-        flex-wrap: wrap;
-        flex: 1 1 100%; /* Chaque article prend toute la largeur disponible */
-        padding: 15px;
-    }
-    
-}
-/* Disposition lorsque la largeur est ≤ 750px */
-@media screen and(max-width: 750px) {
-    section:first-of-type(1) {
-        flex-direction: column; /* L'article passe sous l'image */
-        flex-wrap: wrap;
-        width: 100%; /* Prend toute la largeur de l'écran */
-        margin-top: 20px; /* Ajustement du margin-top si nécessaire */
-    }
-
-    section > img {
-        margin: 20px auto; /* Centrer l'image avec moins de marge */
-    }
-
-    section article {
-        padding: 20px;
-        width: 100%;
+        display:flex;
+        flex-wrap:wrap;
+        flex:1 1 100%;
+        padding:15px;
     }
 }
-
-.match-table, table, main section:nth-of-type(2) {
-    margin-top: 50px;
+@media screen and(max-width: 750px){
+    section:first-of-type(1){
+        flex-direction:column;
+        flex-wrap:wrap;
+        width:100%;
+        margin-top:20px;
+    }
+    section > img{
+        margin:20px auto;
+    }
+    section article{
+        padding:20px;
+        width:100%;
+    }
 }
-
-.card, .match-table, .dropdown-menu {
-  display: none; /* Masquer par défaut */
-}
-
-a:visited, a {
-    color: white; 
-    text-decoration: none;
-}
-
-.card:hover{
-    cursor: pointer;
-    transform: scale(1.1);
-    z-index: 10;
-    box-shadow: 10px 10px 20px #4fB6B5;
-}
-
-/* Titre */
-.card h2 {
-    font-size: 1.5em;
-    margin-bottom: 20px;
-}
-
-/* Informations du match */
-.match-info {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-/* Équipe */
-.team {
-    text-align: center;
-}
-
-.team img {
-    width: 50px;
-    height: auto;
-    border-radius: 5px;
-    margin-bottom: 5px;
-}
-
-.team p {
-    font-size: 0.9em;
-    margin: 0;
-}
-
-.team span {
-    font-weight: bold;
-    font-size: 1em;
-}
-
-/* Score */
-.score {
-    display: flex;
-    align-items: center;
-    font-size: 1.8em;
-    gap: 5px;
-}
-
-/* Phase */
-.phase {
-    font-size: 1em;
-    color: #dcdcdc;
-    margin-top: 10px;
-    border-bottom: 1px solid #F2F2F2;
-    padding-bottom: 5px;
-}
-
-main hr:nth-of-type(1), main hr:nth-of-type(2){
-    border: 1px solid #000000;
-    width: 90%;
-}
-
-a > img:hover{
-    cursor: pointer;
-    transform: scale(1.1);
-}
-a > img{
-    margin-left: 20px;
-    transition: all 0.3s ease-in-out;
-    margin: 20px;
-}
-
-/*Pour la barre de navigation*/
-nav{
-    display: inline-flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    position: sticky;
-    top: 0;
-    background-color: #D9C179;
-    justify-content: space-around;
-    width: 100%;
-    z-index: 999;
-}
-
-nav > p{
-    background-color: #223059;
-    border-radius: 90px;
-    color: #f2f2f2;
-    padding: 7px;
-    text-transform: uppercase;
-
-}
-
-nav > p:hover{
-    color: #D9C179;
-    cursor: pointer;
-}
-
-/*Pour le footer*/
-footer p {
-    position: relative;
-    line-height: 0.5em; 
-    cursor: pointer; 
-}
-
-footer p span {
-    position: relative; /* Pour positionner le ::after sous le texte */
-    display: inline; /* Le texte s'affiche en largeur naturelle */
-}
-
-footer p span::after {
-    content: ''; /* Crée la ligne */
-    position: absolute;
-    left: 0;
-    bottom: -2px; /* Ajuste la position sous le texte */
-    height: 1px; /* Épaisseur du soulignement */
-    width: 0;
-    background-color: #F2F2F2; /* Couleur de la ligne */
-    transition: width 0.3s ease-in-out; /* Animation fluide */
-}
-
-footer p span:hover::after {
-    width: 100%; /* La ligne s'étend sous le texte uniquement */
-}
-
-footer > aside:first-child{
-    position: relative;
-    height: fit-content;
-    width: fit-content; 
-    left: 250px;
-    top: 400px;
-    color: #F2F2F2;
-}
-
-footer > aside:nth-child(2){
-    position: relative;
-    height: fit-content;
-    width: fit-content; 
-    left: 650px;
-    top: 235px;
-    color: #F2F2F2;
-}
-
-footer > aside:last-of-type{
-    position: relative;
-    display: inline-flex;
-    gap: 30px;
-    top: 375px;
-    left: 250px;
-    color: #f2f2f2;
-    margin: 0;
-}
-
-footer > hr{
-    position: relative;
-    border: 1px solid #F2F2F2 !important;  /* Ajoute une ligne en haut */
-    width: 70%;
-    top: 380px;
-}
-
-/* Conteneur global pour la section Jeux Olympiques */
-.jeux-olympiques {
-    display: flex;
-    justify-content: space-between;
-    color: #F2F2F2;
-}
-
-/* Menu déroulant */
-.menu-container {
-    position: relative;
-    display: inline-block;
-    border-radius: 5px;
-}
-
-/* Titre du menu */
-.menu-item p {
-    color: #F2F2F2;
-    cursor: pointer;
-    background-color: #223059;
-    border-radius: 90px;
-    padding: 7px;
-    text-transform: uppercase;  
-}
-.menu-item p:hover{
-    color: #D9C179;
-}
-
-/* Menu déroulant */
-.dropdown-menu {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #223059;
-    color: white;
-    width: 200px;
-    padding: 10px 0;
-    list-style-type: none;
-    margin: 0;
-    border-radius: 4px;
-    transition: opacity 0.3s ease-in-out;
-    max-height: 280px; /* Hauteur maximale du menu */
-    overflow-y: auto; /* Ajoute la barre de défilement verticale */
-}
-
-/* Éléments de la liste */
-.dropdown-menu li {
-    padding: 8px 20px;
-    border-bottom: 1px solid #F2F2F2;
-    cursor: pointer;
-    text-decoration: none;
-}
-
-.dropdown-menu > li > a{
-    color: white;
-}
-
-.dropdown-menu > li > a:hover{
-    color: #D9C179;
-}
-
-/* Effet au survol */
-.dropdown-menu li:hover {
-    background-color: #3a4a73;
-    color: #D9C179;
-}
-
-/* Afficher le menu quand on survole le conteneur principal */
-.menu-item:hover .dropdown-menu {
-    display: block;
-    opacity: 1;
-}
-
-/* Garder le menu ouvert même si la souris quitte un sous-élément */
-.menu-container:hover .dropdown-menu {
-    display: block;
-    opacity: 1;
-}
-
-/* Customisation du scrollbar */
-::-webkit-scrollbar{
-    width: 12px;
-    background-color: #3A4A73;
-}
-::-webkit-scrollbar-track{
-    border-radius: 3px;
-    background-color: transparent;
-}
-::-webkit-scrollbar-thumb{
-    border-radius: 5px;
-    background: linear-gradient(180deg, #3A4A73, #223059);
-    border: 2px solid black;
-}
-
-.toggle-matches:hover{
-    cursor: pointer;
-}
-
-/* Conteneur Flex */
-.align-container {
-    display: flex;
-    align-items: center; /* Aligne verticalement */
-    gap: 840px; /* Espacement entre le titre et le bouton */
-}
-
-/* Réinitialisation des marges */
-.align-container > h2 {
-    font-size: 24px; /* Ajuster si besoin */
-    line-height: 1px;
-}
-
-/* Styles de base pour le bouton */
-.button {
-    position: relative;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 50px;
-    overflow: hidden;
-    cursor: pointer;
-    left: 0;
-}
-  
-/* Texte */
-.button .text {
-    margin-right: 40px; /* Espace pour le cercle avec flèche */
-    position: relative;
-    z-index: 2;
-}
-  
-/* Cercle autour de la flèche */
-.button .circle {
-    position: absolute;
-    right: 0;
-    width: 40px;
-    height: 40px;
-    background-color: #000000;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1;
-}
-  
-/* Flèche dans le cercle */
-.button .circle .arrow {
-    font-size: 14px;
-    color: #F2F2F2; /* Couleur initiale de la flèche */
-    z-index: 3; /* Assure que la flèche reste visible */
-}
-
-/* Effet hover */
-.button:hover {
-    background-color: black; /* Le fond devient noir */
-    color: #F2F2F2; /* Le texte devient blanc pour le contraste */
-}
-
-.button:hover .text {
-    color: #F2F2F2; /* Texte blanc pour rester lisible */
-}
-
-.button:hover .circle {
-    width: 150px; /* Le cercle s'agrandit pour couvrir tout le bouton */
-    height: 50px; /* Conserve une forme ovale (comme le bouton) */
-    right: 0; /* Le cercle couvre toute la zone */
-    background-color: transparent; /* Le cercle devient blanc */
-    border-radius: 50px; /* Conserve une forme arrondie */
-}
-
-.button:hover .circle .arrow {
-    position: absolute;
-    right: 10px; /* Maintient la flèche à 10px du bord droit */
+/* Les media querys pour le telephone */
+@media screen and (max-width: 460px){
+    main{
+        width: 428px;
+    }
+    header{
+        background-image: url(images/screenshot_header_428.png);
+        background-repeat: no-repeat;
+        padding-top: 100px;
+    }
+    li, p, #Resultat > table h2, #Resultat > table h3{
+        font-size: 14px;
+    }
+    h1{
+        font-size: 28px;
+    }
+    h2{
+        font-size: 18px;
+    }
+    h3{
+        font-size: 20px;
+    }
+    h4{
+        font-size: 17px;
+    }
+    section {
+        width: 400px;
+        margin: 1em auto;
+    }
+    div{
+        border-radius: 30px;
+    }
+    img{
+        border-radius: 30px;
+        width: auto;
+        height: auto;
+    }
+    section > div > div{
+        flex-direction: column;
+        padding: .5em;
+        margin: auto;
+    }
+    #toggle-matches{
+        display: none;
+    }
+    footer{
+        background-image: url(images/screenshot_footer_428.png);
+        height: 128px;
+    }
+    footer *{
+        font-size: 7px;
+    }
+    footer h4{
+        font-size: 10px;
+    }
+    footer div{
+        margin-top: 2.5em;
+    }
+    footer > div{
+        padding: 0 4em 0 11em;
+    }   
+    footer hr {
+        margin: .25em auto;
+    }
 }
