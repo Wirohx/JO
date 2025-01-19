@@ -2,13 +2,16 @@
     font-family: 'BrunoAce';
     src: url(Fonts/BrunoAce-Regular.ttf);
 }
-
-section, .match-info , table{
-    margin: auto;
+/* Typographie générale */
+table tr > th, h2, h1, .team > p, .score, nav > p, footer h4, footer > aside:last-of-type > p, .menu-item p, .button{
+    font-family: 'BrunoAce';
 }
 
-header > img{
-    display: block;
+p, table tr > td, .team span, .card h2, footer > aside:first-child > p {
+    font-family: 'Inter';
+}
+
+section, .match-info , table{
     margin: auto;
 }
 
@@ -22,7 +25,11 @@ body{
 main{
     background-color: #F2F2F2;
     width: 1440px;
-    font-family: 'Inter';
+}
+
+header > img{
+    display: block;
+    margin: auto;
 }
 
 button {
@@ -36,26 +43,25 @@ button {
     margin: 10px;
     align-content: center;
 }
-    
-i {
-    color: #f2f2f2;
-}
-    
-button:hover {
-i{
-    color: #D9C179;
-}
+      
+button:hover i{
+     color: #D9C179;
 }
 
-section:nth-of-type(1){
+/* Sections */
+section:nth-of-type(1), main section:nth-of-type(2) {
     display: flex;
     flex-direction: row;
     background-color: #223059;
-    color: #fff;
-    border-radius: 90px;
+    border-radius: 45px;
     justify-content: center;
+    margin: 50px auto;
+    color: white;
     width: 50%;
-    margin-top: 50px;
+}
+
+section:nth-of-type(1) {
+    border-radius: 45px;
 }
 
 section > img{
@@ -64,7 +70,7 @@ section > img{
 }
 
 main > section:first-of-type > p:last-of-type {
-    color: rgb(255, 255, 255); /* Exemple de style */
+    color: #F2F2F2; /* Exemple de style */
     font-weight: bold;
     cursor: pointer;
 }
@@ -73,80 +79,60 @@ section article{
     align-content: center;
 }
 
+main section:nth-of-type(2){
+    display: flex;
+    flex-direction: row;
+    gap: 20px; /* Espace entre les articles */
+    background-color: #223059;
+    color: #D9C179;
+    border-radius: 45px;
+    margin-bottom: 50px;
+    height: auto;
+    width: 50%;
+}
+
+main section:nth-of-type(2) article {
+    flex: 1;
+    background-color: #D9C179;
+    color: black;
+    border-radius: 45px;
+    padding: 5px;
+    margin: 20px;
+    text-align: start;
+    overflow: hidden;
+}
+main section:nth-of-type(2) h2{
+    text-align: center;
+}
+
 table tbody{
     background-color: #ffffff;
     border-left: 2px solid #000;
     border-right: 2px solid #000;
     text-align: center;
 }
+
 table{
     border-collapse: collapse;
-    margin-top: 50px;
 }
 
-table tr > th{
-    font-family: 'BrunoAce';
+table tr > th, table tr > td{
     font-size: larger;
 }
-table tr > td{
-    font-family: 'Inter';
-    font-size: larger;
-}
-
-main section:nth-of-type(1){
-    display: flex;
-    flex-direction: row;
-    padding: 10px;
-}
-
-main section:nth-of-type(2){
-    display: flex;
-    flex-direction: row;
-    gap: 20px; /* Espace entre les articles */
-    
-    background-color: #223059;
-    color: #D9C179;
-    border-radius: 45px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    height: auto;
-    width: 50%;
-}
-
-main section:nth-of-type(2) article{
-    background-color: #D9C179;
-    border-radius: 45px;
-    color : #000000;
-    margin: 20px;
-    text-align: center;
-    padding: 5px;
-    flex: 1; /* Chaque article prend un espace égal dans la section */
-    box-sizing: border-box; /* Inclut le padding dans la largeur */
-    overflow: hidden; /* Empêche les débordements de contenu */
-    text-align: start;
-}
-
-h2{
-    font-family: 'BrunoAce';
-    margin: 25px;
-}
-
 main h2:nth-of-type(2){
     margin-top: 75px;
 }
 
 h1{
-    font-family: 'BrunoAce';
     text-align: center;
-    margin: 20px;
+    margin: 50px;
 }
 
 main h2:nth-of-type(2){
-    line-height: 0.1em;
+    line-height: 1em;
 }
 
-main > h2{
-    text-align: left;
+main > h2, main a:nth-of-type(1) > img, .align-container > h2{
     margin-left: 75px;
 }
 
@@ -158,7 +144,6 @@ main > h2{
     text-align: center;
     padding: 20px 30px;
     width: 400px; /* Garde une largeur fixe pour les cartes */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease-in-out;
 }
 
@@ -247,12 +232,11 @@ main > h2{
     }
 }
 
-.match-table {
-    margin-top: 40px;
+.match-table, table, main section:nth-of-type(2) {
+    margin-top: 50px;
 }
 
-.card,
-.match-table {
+.card, .match-table, .dropdown-menu {
   display: none; /* Masquer par défaut */
 }
 
@@ -272,7 +256,6 @@ a:visited, a {
 .card h2 {
     font-size: 1.5em;
     margin-bottom: 20px;
-    font-family: 'Inter';
 }
 
 /* Informations du match */
@@ -286,10 +269,6 @@ a:visited, a {
 /* Équipe */
 .team {
     text-align: center;
-}
-
-.team > p{
-    font-family: 'BrunoAce';
 }
 
 .team img {
@@ -307,7 +286,6 @@ a:visited, a {
 .team span {
     font-weight: bold;
     font-size: 1em;
-    font-family: 'Inter';
 }
 
 /* Score */
@@ -316,7 +294,6 @@ a:visited, a {
     align-items: center;
     font-size: 1.8em;
     gap: 5px;
-    font-family: 'BrunoAce';
 }
 
 /* Phase */
@@ -326,10 +303,6 @@ a:visited, a {
     margin-top: 10px;
     border-bottom: 1px solid #F2F2F2;
     padding-bottom: 5px;
-}
-
-p{
-    font-family: 'Inter';
 }
 
 main hr:nth-of-type(1), main hr:nth-of-type(2){
@@ -347,16 +320,14 @@ a > img{
     margin: 20px;
 }
 
-main a:nth-of-type(1) > img{
-    margin-left: 75px;
-}
-
 /*Pour la barre de navigation*/
 nav{
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     position: sticky;
     top: 0;
     background-color: #D9C179;
-    display: inline-flex;
     justify-content: space-around;
     width: 100%;
     z-index: 999;
@@ -366,7 +337,6 @@ nav > p{
     background-color: #223059;
     border-radius: 90px;
     color: #f2f2f2;
-    font-family: 'BrunoAce';
     padding: 7px;
     text-transform: uppercase;
 
@@ -378,10 +348,6 @@ nav > p:hover{
 }
 
 /*Pour le footer*/
-footer h4{
-    font-family: 'BrunoAce';
-}
-
 footer p {
     position: relative;
     line-height: 0.5em; 
@@ -417,9 +383,6 @@ footer > aside:first-child{
     color: #F2F2F2;
 }
 
-footer > aside:first-child > p{
-    font-family: 'Inter';
-}
 footer > aside:nth-child(2){
     position: relative;
     height: fit-content;
@@ -437,10 +400,6 @@ footer > aside:last-of-type{
     left: 250px;
     color: #f2f2f2;
     margin: 0;
-}
-
-footer > aside:last-of-type > p{
-    font-family: 'BrunoAce';
 }
 
 footer > hr{
@@ -470,7 +429,6 @@ footer > hr{
     cursor: pointer;
     background-color: #223059;
     border-radius: 90px;
-    font-family: 'BrunoAce';
     padding: 7px;
     text-transform: uppercase;  
 }
@@ -480,7 +438,6 @@ footer > hr{
 
 /* Menu déroulant */
 .dropdown-menu {
-    display: none;
     position: absolute;
     top: 100%;
     left: 0;
@@ -491,7 +448,6 @@ footer > hr{
     list-style-type: none;
     margin: 0;
     border-radius: 4px;
-    
     transition: opacity 0.3s ease-in-out;
     max-height: 280px; /* Hauteur maximale du menu */
     overflow-y: auto; /* Ajoute la barre de défilement verticale */
@@ -559,7 +515,6 @@ footer > hr{
 
 /* Réinitialisation des marges */
 .align-container > h2 {
-    margin-left: 75px;
     font-size: 24px; /* Ajuster si besoin */
     line-height: 1px;
 }
@@ -571,7 +526,6 @@ footer > hr{
     align-items: center;
     justify-content: center;
     padding: 10px 20px;
-    font-family: 'BrunoAce';
     font-size: 16px;
     border-radius: 50px;
     overflow: hidden;
