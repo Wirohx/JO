@@ -1,9 +1,0 @@
-margin-top : 50px ;  //entre chaque gros bloc
-section avec 2 figure (image et figcaption)
-section pas de bg
-div bg bleu
-article enfant de div
-dimension main width max 1370px padding 0
-enfant de main margin left/right 0
-Pour tableau aside turquoise tableau bleu
-Enfant direct d’aside en bleu clair
