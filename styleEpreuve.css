@@ -161,7 +161,6 @@ div > article > h4{
 
 #tableF, #tableH, #Resultat tbody tr{
     display: none;
-    transition: all 1s ease-in-out;
 }
 
 #tableF:checked + label tbody tr,
