@@ -161,6 +161,7 @@ div > article > h4{
 
 #tableF, #tableH, #Resultat tbody tr{
     display: none;
+    transition: all 1s ease-in-out;
 }
 
 #tableF:checked + label tbody tr,
@@ -336,6 +337,7 @@ footer > ul > li{
 a, a:visited{
     color: inherit;
     text-decoration: none;
+    transition: color 0.3s linear;
 }
 
 a:hover{
@@ -505,3 +507,100 @@ a:hover{
     }
 }
 
+/* La barre de navigation*/
+nav{
+    display:inline-flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    position:sticky;
+    top:0;
+    background-color:#D9C179;
+    justify-content:space-around;
+    width:100%;
+    z-index:999;
+}
+nav > p{
+    background-color:#223059;
+    border-radius:90px;
+    color:#f2f2f2;
+    padding:7px;
+    text-transform:uppercase;
+}
+nav > p:hover{
+    color:#D9C179;
+    cursor:pointer;
+}
+.jeux-olympiques{
+    display:flex;
+    justify-content:space-between;
+    color:#F2F2F2;
+}
+.menu-container{
+    position:relative;
+    display:inline-block;
+    border-radius:5px;
+}
+.menu-item p{
+    color:#F2F2F2;
+    cursor:pointer;
+    background-color:#223059;
+    border-radius:90px;
+    padding:7px;
+    text-transform:uppercase;
+}
+.menu-item p:hover{
+    color:#D9C179;
+}
+.dropdown-menu{
+    position:absolute;
+    top:100%;
+    left:0;
+    background-color:#223059;
+    color:#fff;
+    width:200px;
+    padding:10px 0;
+    list-style-type:none;
+    margin:0;
+    border-radius:4px;
+    transition:opacity .3s ease-in-out;
+    max-height:280px;
+    overflow-y:auto;
+    display: none;
+}
+.dropdown-menu li{
+    padding:8px 20px;
+    border-bottom:1px solid #F2F2F2;
+    cursor:pointer;
+    text-decoration:none;
+}
+.dropdown-menu > li > a{
+    color:#fff;
+}
+.dropdown-menu > li > a:hover{
+    color:#D9C179;
+}
+.dropdown-menu li:hover{
+    background-color:#3a4a73;
+    color:#D9C179;
+
+}.menu-item:hover .dropdown-menu{
+    display:block;
+    opacity:1;
+}
+.menu-container:hover .dropdown-menu{
+    display:block;
+    opacity:1;
+}
+::-webkit-scrollbar{
+    width:12px;
+    background-color:#3A4A73;
+}
+::-webkit-scrollbar-track{
+    border-radius:3px;
+    background-color:transparent;
+}
+::-webkit-scrollbar-thumb{
+    border-radius:5px;
+    background:linear-gradient(180deg,#3A4A73,#223059);
+    border:2px solid #000;
+}
