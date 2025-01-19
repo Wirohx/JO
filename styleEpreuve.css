@@ -1,0 +1,507 @@
+@import "https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap";
+
+body{
+    background-color: #D9C179;
+    margin: 0;
+}
+
+main{
+    width: 1440px;
+    background-color: #F2F2F2;
+    margin: auto;
+}
+
+header{
+    background-image: url(Images/screenshot_header_1440.png);
+    background-repeat: no-repeat;
+    padding-top: 207px;
+}
+
+li, p{
+    font-family: 'Inter', sans-serif;
+    font-size: 26px;
+}
+
+h1{
+    font-family: 'Bruno Ace', sans-serif;
+    font-size: 60px;
+}
+
+h2{
+    font-family: 'Bruno Ace', serif;
+    font-size: 48px;
+}
+
+h3{
+    font-family: 'Bruno Ace', serif;
+    font-size: 40px;
+}
+
+h4{
+    font-family: 'Bruno Ace', serif;
+    font-size: 30px;
+    margin: 1em 0 0 0;
+}
+
+section {
+    width: 1370px;
+    margin: 1em auto;
+}
+
+div{
+    border-radius: 90px;
+    text-align: center;
+    margin: 1em auto;
+}
+
+img{
+    height: 100%;
+    border-radius: 90px;
+}
+
+section > div{
+    background-color: #223059;
+}
+
+div > h1 {
+    padding-top: 1em;
+    text-decoration: underline;
+    color: #D9C179;
+}
+
+section > div > div{
+    display: flex;
+    padding: 1.5em;
+    margin: auto;
+}
+
+div > article{
+    border-radius: 90px;
+    background-color: #D9C179;
+    padding: 1em 2em;
+    margin: 1.5em;
+    text-align: justify;
+    align-content: center;
+}
+
+div > article > h4{
+    text-align: center;
+}
+
+/* Tableau des medailles */
+
+#Resultat h2 + hr + h2, 
+#Resultat label + h2{
+    background-color: #1AA3D9;
+    width: 5em;
+    text-align: center;
+    border-radius: 90px;
+}
+
+#Resultat label + h2{
+    background-color: #FFAED4;
+}
+
+#Resultat table{
+    width: 1370px;
+    border-spacing: 0 10px;
+    color: #F2F2F2;
+}
+
+#Resultat table th{
+    width: 33%;
+}
+
+#Resultat table img{
+    border-radius: 30px;
+}
+
+#Resultat thead th,
+#Resultat thead + tbody tr > td{
+    background-color: #223059;
+    border-radius: 90px 0 0 90px;
+}
+
+#Resultat label > thead th{
+    padding: 1em;
+}
+
+#Resultat thead th + th,
+#Resultat tbody tr > td + td{
+    border-radius: 0;
+}
+
+#Resultat thead th + th + th,
+#Resultat tbody tr > td + td + td{
+    border-radius: 0 90px 90px 0;
+}
+
+#Resultat thead th > h2{
+    background-color: #C4C0B5;
+    border-radius: 90px;
+    padding: 2em 0;
+    margin: 0.5em auto;
+    width: 95%;
+}
+
+#Resultat thead th + th > h2{
+    background-color: #D9C179;
+    padding: 3em 0;
+}
+
+#Resultat thead th + th + th > h2{
+    background-color: #BA8C0F;
+    padding: 1em 0;
+}
+
+#Resultat thead + tbody tr > td
+{
+    text-align: center;
+}
+
+#tableF, #tableH, #Resultat tbody tr{
+    display: none;
+}
+
+#tableF:checked + label tbody tr,
+#tableH:checked + label tbody tr{
+    display: table-row;
+}
+
+/* Explication phase de competition */
+
+#phaseDeCompetition > hr + div{
+    padding: 1em;
+}
+
+#phaseDeCompetition hr + div > h3{
+    background-color: #F2F2F2;
+    width: 14em;
+    border-radius: 90px;
+}
+
+#phaseDeCompetition > div > div{
+    flex-direction: column;
+    text-align: left;
+    padding: 0 2em;
+    margin: 1em;
+}
+
+#phaseDeCompetition div > ul > li {
+    margin: 0.5em 0;
+}
+
+#phaseDeCompetition > hr + div > * {
+    margin-left: 2em;
+}
+
+#phaseDeCompetition h3 + div {
+    background-color: #F2F2F2;
+}
+
+#phaseDeCompetition h3 + div + h3{
+    background-color: #D9C179;
+}
+
+#phaseDeCompetition h3 + div + h3 + div{
+    border-left: 3em ridge #FFAED4;
+    background-color: #FFAED4;
+}
+
+#phaseDeCompetition h3 + div + div{
+    border-left: 3em ridge #1AA3D9;
+    background-color: #1AA3D9;
+}
+
+#phaseDeCompetition div + div + div{
+    border-left: 3em ridge #4FB6B5;
+    background-color: #4FB6B5;
+}
+
+#phaseDeCompetition div + div + div + div{
+    border-left: 3em ridge #D9C179;
+    background-color: #D9C179;
+}
+
+/* Record actuel */
+
+#RecordActuel > div{
+    display: flex;
+    background-color: initial;
+    padding: 0;
+}
+
+#RecordActuel > div > div{
+    background-color: #4FB6B5;
+    text-align: left;
+    margin: 0 1em;
+}
+
+#RecordActuel > div > div > ul{
+    list-style: none;
+    margin: auto;
+}
+
+#RecordActuel > div > div li{
+    margin: 0;
+}
+
+#RecordActuel img{
+    width: 556px;
+    margin: auto;
+}
+
+/* Records precedents */
+
+#recordPrecedents ol{
+    list-style-position: inside;
+    padding: 0;
+}
+
+#recordPrecedents ol li{
+    background-color: #FFAED4;
+    border-radius: 90px;
+    margin: 0.5em 5em;
+    padding: 0 3em;
+}
+
+/* Temps Forts */
+
+#TempsForts div{
+    background-color: initial;
+    display: flex;
+    justify-content: space-between;
+}
+
+#TempsForts img{
+    margin: 0;
+}
+
+#TempsForts div > img{
+    width: 614px;
+}
+
+#TempsForts div img + img{
+    width: 727px;
+}
+
+footer{
+    background-image: url(Images/screenshot_footer_1440.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #F2F2F2;
+    height: 428px;
+}
+
+footer *{
+    font-size: 20px;
+}
+
+footer h4{
+    font-size: 24px;
+}
+
+footer div{
+    background-color: initial;
+    margin-top: 2em;
+    text-align: left;
+}
+
+footer > div{
+    display: flex;
+    margin: 0;
+    padding: 1.5em 8em;
+}
+
+footer ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer hr {
+    width: 50em;
+}
+
+footer > ul{
+    display: flex;
+    justify-content: center;
+}
+
+footer > ul > li{
+    width: auto;
+    margin: 0 2em;
+}
+
+a, a:visited{
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #D9C179;
+}
+
+
+@media screen and (max-width: 1440px){
+    main{
+        width: 428px;
+    }
+
+    header{
+        background-image: url(Images/screenshot_header_428.png);
+        background-repeat: no-repeat;
+        padding-top: 100px;
+    }
+
+    li, p, #Resultat > table h2, #Resultat > table h3{
+        font-size: 14px;
+    }
+    
+    h1{
+        font-size: 28px;
+    }
+    
+    h2{
+        font-size: 24px;
+    }
+    
+    h3{
+        font-size: 20px;
+    }
+    
+    h4{
+        font-size: 17px;
+    }
+    
+    section {
+        width: 400px;
+        margin: 1em auto;
+    }
+
+    div{
+        border-radius: 30px;
+    }
+
+    img{
+        border-radius: 30px;
+    }
+
+    section > div > div{
+        flex-direction: column;
+        padding: .5em;
+        margin: auto;
+    }
+
+    div > article{
+        border-radius: 30px;
+        padding: 0.5em 1em;
+        margin: 0.5em;
+    }
+
+    section > img {
+        border-radius: 30px;
+        width: 400px;
+    }
+
+    /* Tableau des medailles */
+
+    #Resultat table{
+        width: 400px;
+        border-spacing: 0 5px;
+    }
+
+    #Resultat thead th{
+        border-radius: 30px 0 0 30px;
+    }
+    
+    #Resultat thead th + th + th{
+        border-radius: 0 30px 30px 0;
+    }
+    
+    #Resultat img{
+        width: 50px;
+    }
+
+    #Resultat thead img{
+        width: 70px;
+    }
+
+    #Resultat thead th > h2{
+        padding: 1em 0;
+        border-radius: 30px;
+    }
+    
+    #Resultat thead th + th > h2{
+        padding: 1.5em 0;
+    }
+    
+    #Resultat thead th + th + th > h2{
+        padding: 0.5em 0;
+    }
+
+    /* Explication phase de competition */
+
+    #phaseDeCompetition > div > div{
+        margin: 1em 0;
+        padding: 0 1em;
+    }
+
+    /* Record actuel */
+
+    #RecordActuel > div{
+        flex-direction: column;
+    }
+
+    #RecordActuel > div > div{
+        margin: .5em 0;
+    }
+
+    #RecordActuel img{
+        width: 400px;
+    }
+
+    /* Records precedents */
+
+    #recordPrecedents ol li{
+        border-radius: 30px;
+        margin: 0.5em;
+        padding: 0 1.5em;
+    }
+
+    /* Temps Forts */
+
+    #TempsForts div > img{
+        width: 180px;
+    }
+    
+    #TempsForts div img + img{
+        width: 212px;
+    }
+
+    footer{
+        background-image: url(Images/screenshot_footer_428.png);
+        height: 128px;
+    }
+
+    footer *{
+        font-size: 7px;
+    }
+    
+    footer h4{
+        font-size: 10px;
+    }
+
+    footer div{
+        margin-top: 2.5em;
+    }
+
+    footer > div{
+        padding: 0 4em 0 11em;
+    }
+
+    footer hr {
+        margin: .25em auto;
+    }
+}
+
