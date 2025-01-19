@@ -17,7 +17,7 @@ body{
     justify-content: center;
     margin: 0;
     padding: 0;
-    background-color: black;
+    background-color: #000000;
 }
 main{
     background-color: #F2F2F2;
@@ -29,7 +29,7 @@ button {
     background-color: #223059; 
     border: none;
     padding: 10px 13px; 
-    border-radius: 8px; 
+    border-radius: 20px; 
     cursor: pointer;
     display: flex;
     color: white;
@@ -43,7 +43,7 @@ i {
     
 button:hover {
 i{
-    color: #d9c179;
+    color: #D9C179;
 }
 }
 
@@ -123,7 +123,7 @@ main section:nth-of-type(2) article{
     flex: 1; /* Chaque article prend un espace égal dans la section */
     box-sizing: border-box; /* Inclut le padding dans la largeur */
     overflow: hidden; /* Empêche les débordements de contenu */
-    text-align: justify; /* Texte bien aligné */
+    text-align: start;
 }
 
 h2{
@@ -152,7 +152,7 @@ main > h2{
 
 /* Carte principale */
 .card {
-    background: linear-gradient(180deg, #1e90ff, #1c1c8c);
+    background: linear-gradient(180deg, #1AA3D9, #223059);
     border-radius: 90px;
     color: white;
     text-align: center;
@@ -265,7 +265,7 @@ a:visited, a {
     cursor: pointer;
     transform: scale(1.1);
     z-index: 10;
-    box-shadow: 10px 10px 20px rgb(19, 28, 125);
+    box-shadow: 10px 10px 20px #4fB6B5;
 }
 
 /* Titre */
@@ -324,7 +324,7 @@ a:visited, a {
     font-size: 1em;
     color: #dcdcdc;
     margin-top: 10px;
-    border-bottom: 1px solid #dcdcdc;
+    border-bottom: 1px solid #F2F2F2;
     padding-bottom: 5px;
 }
 
@@ -343,7 +343,7 @@ a > img:hover{
 }
 a > img{
     margin-left: 20px;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
     margin: 20px;
 }
 
@@ -373,7 +373,7 @@ nav > p{
 }
 
 nav > p:hover{
-    color: #d9c179;
+    color: #D9C179;
     cursor: pointer;
 }
 
@@ -400,7 +400,7 @@ footer p span::after {
     bottom: -2px; /* Ajuste la position sous le texte */
     height: 1px; /* Épaisseur du soulignement */
     width: 0;
-    background-color: #f2f2f2; /* Couleur de la ligne */
+    background-color: #F2F2F2; /* Couleur de la ligne */
     transition: width 0.3s ease-in-out; /* Animation fluide */
 }
 
@@ -414,7 +414,7 @@ footer > aside:first-child{
     width: fit-content; 
     left: 250px;
     top: 400px;
-    color: #f2f2f2;
+    color: #F2F2F2;
 }
 
 footer > aside:first-child > p{
@@ -426,7 +426,7 @@ footer > aside:nth-child(2){
     width: fit-content; 
     left: 650px;
     top: 235px;
-    color: #f2f2f2;
+    color: #F2F2F2;
 }
 
 footer > aside:last-of-type{
@@ -445,7 +445,7 @@ footer > aside:last-of-type > p{
 
 footer > hr{
     position: relative;
-    border: 1px solid #ffffff !important;  /* Ajoute une ligne en haut */
+    border: 1px solid #F2F2F2 !important;  /* Ajoute une ligne en haut */
     width: 70%;
     top: 380px;
 }
@@ -454,7 +454,7 @@ footer > hr{
 .jeux-olympiques {
     display: flex;
     justify-content: space-between;
-    color: white;
+    color: #F2F2F2;
 }
 
 /* Menu déroulant */
@@ -466,7 +466,7 @@ footer > hr{
 
 /* Titre du menu */
 .menu-item p {
-    color: #f2f2f2;
+    color: #F2F2F2;
     cursor: pointer;
     background-color: #223059;
     border-radius: 90px;
@@ -475,7 +475,7 @@ footer > hr{
     text-transform: uppercase;  
 }
 .menu-item p:hover{
-    color: #d9c179;
+    color: #D9C179;
 }
 
 /* Menu déroulant */
@@ -500,7 +500,7 @@ footer > hr{
 /* Éléments de la liste */
 .dropdown-menu li {
     padding: 8px 20px;
-    border-bottom: 1px solid #f2f2f2;
+    border-bottom: 1px solid #F2F2F2;
     cursor: pointer;
     text-decoration: none;
 }
@@ -510,13 +510,13 @@ footer > hr{
 }
 
 .dropdown-menu > li > a:hover{
-    color: #d9c179;
+    color: #D9C179;
 }
 
 /* Effet au survol */
 .dropdown-menu li:hover {
     background-color: #3a4a73;
-    color: #d9c179;
+    color: #D9C179;
 }
 
 /* Afficher le menu quand on survole le conteneur principal */
@@ -534,7 +534,7 @@ footer > hr{
 /* Customisation du scrollbar */
 ::-webkit-scrollbar{
     width: 12px;
-    background-color: #3a4a73;
+    background-color: #3A4A73;
 }
 ::-webkit-scrollbar-track{
     border-radius: 3px;
@@ -542,7 +542,7 @@ footer > hr{
 }
 ::-webkit-scrollbar-thumb{
     border-radius: 5px;
-    background-color: #223059;
+    background: linear-gradient(180deg, #3A4A73, #223059);
     border: 2px solid black;
 }
 
@@ -592,7 +592,7 @@ footer > hr{
     right: 0;
     width: 40px;
     height: 40px;
-    background-color: rgb(0, 0, 0);
+    background-color: #000000;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -603,18 +603,18 @@ footer > hr{
 /* Flèche dans le cercle */
 .button .circle .arrow {
     font-size: 14px;
-    color: white; /* Couleur initiale de la flèche */
+    color: #F2F2F2; /* Couleur initiale de la flèche */
     z-index: 3; /* Assure que la flèche reste visible */
 }
 
 /* Effet hover */
 .button:hover {
     background-color: black; /* Le fond devient noir */
-    color: white; /* Le texte devient blanc pour le contraste */
+    color: #F2F2F2; /* Le texte devient blanc pour le contraste */
 }
 
 .button:hover .text {
-    color: white; /* Texte blanc pour rester lisible */
+    color: #F2F2F2; /* Texte blanc pour rester lisible */
 }
 
 .button:hover .circle {
