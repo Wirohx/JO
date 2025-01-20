@@ -5,6 +5,9 @@ body{
     color: #223059;
 }
 
+p{
+    font-family:'Inter';
+}
 
 main{
     width: 1440px;
@@ -19,8 +22,6 @@ article{
 #Fond{
     background-color: #223059;
     border-radius: 90px;
-    width: 1370px;
-    height: 450px;
     display: flex;
     flex-direction: row;
 }
@@ -47,7 +48,7 @@ h2{
 }
 
 #loc{
-    margin: 0 25px;
+    margin: auto 25px;
     text-align: center;
     background-color: #1AA3D9;
     display: flex;
@@ -63,12 +64,13 @@ h2{
     flex-wrap: nowrap;
     font-size: 26px;
     border-radius: 90px;
-    margin: 0 25px;
+    margin: auto 25px;
 }
 
 #citations > article{
     border-radius: 30px;
-    height: 265px;
+    height: 300px;
+    width: 400px;
     justify-content: center;
     margin: auto 25px;
 }
@@ -88,7 +90,7 @@ iframe > figure > figcaption{
 }
 
 #ceremonie{
-    margin: 0 0 50px 50px;
+    margin: auto 25px;
     text-align: center;
     display:flex;
     flex-direction: row;
@@ -112,7 +114,7 @@ h2 + section{
     border-radius: 90px;
     padding: 1em;
     display: flex;
-    margin: auto;
+    margin: auto 25px; 
     font-size: 26px;
 }
 
@@ -139,12 +141,12 @@ table{
     color: #f2f2f2; 
     overflow: hidden;
     padding: 2em;
-    margin: auto;
+    margin: auto 25px;
 }
 
 header > img{
     display: block;
-    margin: auto;
+    margin: auto 25px;
 }
 
 thead {
