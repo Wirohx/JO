@@ -1,12 +1,9 @@
-@font-face {
-    font-family: 'BrunoAce';
-    src: url(Fonts/BrunoAce-Regular.ttf);
-}
+@import "https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap";
 /* Typographie générale */
-table tr > th,h2,h1,.team > p,.score,nav > p,footer h4,footer > aside:last-of-type > p,.menu-item p,.button{
-    font-family:'BrunoAce';
+table tr > th,h2,h1, h3, .team > p,.score,nav > p,footer h4,footer > aside:last-of-type > p,.menu-item p,.button{
+    font-family:'Bruno Ace';
 }
-p,table tr > td,.team span,.card h2,footer > aside:first-child > p{
+p,table tr > td,.team span,.card h2,footer > aside:first-child > p, section:nth-of-type(1) > a{
     font-family:'Inter';
 }
 section,.match-info,table{
@@ -27,19 +24,17 @@ header > img{
     display:block;
     margin:auto;
 }
-button{
-    background-color:#223059;
-    border:none;
-    padding:10px 13px;
-    border-radius:20px;
+main > nav > a{
     cursor:pointer;
     display:flex;
-    color:#fff;
-    margin:10px;
-    align-content:center;
+    color:#223059;
+    align-items:center;
 }
-button:hover i{
-    color:#D9C179;
+i{
+    color: #223059;
+}
+main > nav > a:hover i{
+    color:#1AA3D9;
 }
 /* Les sections */
 section:nth-of-type(1),main section:nth-of-type(2){
@@ -59,10 +54,11 @@ section > img{
     border-radius:90px;
     margin:50px;
 }
-main > section:first-of-type > p:last-of-type{
+section:nth-of-type(1) > a{
     color:#F2F2F2;
     font-weight:700;
     cursor:pointer;
+    margin: 10px;
 }  
 section article{
     align-content:center;
@@ -88,7 +84,7 @@ main section:nth-of-type(2) article{
     text-align:start;
     overflow:hidden;
 }
-main section:nth-of-type(2) h2{
+main section:nth-of-type(2) h3{
     text-align:center;
 }
 /* Les tableaux */
@@ -226,7 +222,7 @@ nav{
     top:0;
     background-color:#D9C179;
     justify-content:space-around;
-    width:100%;
+    width: 100%;
     z-index:999;
 }
 nav > p{
@@ -538,6 +534,9 @@ footer > hr{
         flex-direction: column;
         padding: .5em;
         margin: auto;
+    }
+    section:nth-of-type(2){
+        width: 300px;
     }
     section:nth-of-type(1) > article img{
         height:20px;
