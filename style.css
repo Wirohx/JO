@@ -3,7 +3,7 @@
 table tr > th,h2,h1, h3, .team > p,.score,nav > p,footer h4,footer > aside:last-of-type > p,.menu-item p,.button{
     font-family:'Bruno Ace';
 }
-p,table tr > td,.team span,.card h2,footer > aside:first-child > p, section:nth-of-type(1) > a{
+p,table tr > td,.team span,.card h2,footer > aside:first-child > p, section:nth-of-type(1) > a, footer li{
     font-family:'Inter';
 }
 section,.match-info,table{
