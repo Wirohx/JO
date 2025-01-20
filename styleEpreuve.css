@@ -48,7 +48,7 @@ section {
     margin: 1em auto;
 }
 
-div{
+div:not(nav *){
     border-radius: 90px;
     text-align: center;
     margin: 1em auto;
@@ -382,7 +382,7 @@ a:hover{
         margin: 1em auto;
     }
 
-    div{
+    div:not(nav *){
         border-radius: 30px;
     }
 
@@ -508,8 +508,7 @@ a:hover{
     }
 }
 
-/* La barre de navigation*/
-nav{
+nav {
     display:flex;
     flex-direction:row;
     flex-wrap:wrap;
@@ -517,40 +516,48 @@ nav{
     top:0;
     background-color:#D9C179;
     justify-content:space-around;
-    z-index:999;
+    z-index:999
 }
-nav > p{
+    
+nav > p {
     background-color:#223059;
     border-radius:90px;
     color:#f2f2f2;
     padding:7px;
     text-transform:uppercase;
+    cursor:pointer
 }
-nav > p:hover{
-    color:#D9C179;
+
+nav > p:hover {
+    color:#D9C179
 }
-.jeux-olympiques{
+
+.jeux-olympiques {
     display:flex;
     justify-content:space-between;
-    color:#F2F2F2;
+    color:#F2F2F2
 }
-.menu-container{
+
+.menu-container {
     position:relative;
     display:inline-block;
-    border-radius:5px;
+    border-radius:5px
 }
-.menu-item p{
+
+.menu-item p {
     color:#F2F2F2;
     cursor:pointer;
     background-color:#223059;
     border-radius:90px;
     padding:7px;
-    text-transform:uppercase;
+    text-transform:uppercase
 }
-.menu-item p:hover{
-    color:#D9C179;
+
+.menu-item p:hover {
+    color:#D9C179
 }
-.dropdown-menu{
+
+.dropdown-menu {
     position:absolute;
     top:100%;
     left:0;
@@ -561,46 +568,54 @@ nav > p:hover{
     list-style-type:none;
     margin:0;
     border-radius:4px;
-    transition: .3s ease-in-out;
+    transition:.3s ease-in-out;
     max-height:280px;
     overflow-y:auto;
-    display: none;
+    display:none
 }
-.dropdown-menu li{
+
+.dropdown-menu li {
     padding:8px 20px;
     border-bottom:1px solid #F2F2F2;
     cursor:pointer;
-    text-decoration:none;
+    text-decoration:none
 }
-.dropdown-menu > li > a{
-    color:#fff;
-}
-.dropdown-menu > li > a:hover{
-    color:#D9C179;
-}
-.dropdown-menu li:hover{
-    background-color:#3a4a73;
-    color:#D9C179;
 
-}.menu-item:hover .dropdown-menu{
-    display:block;
-    opacity:1;
+.dropdown-menu > li > a {
+    color:#fff
 }
-.menu-container:hover .dropdown-menu{
-    display:block;
-    opacity:1;
+
+.dropdown-menu > li > a:hover {
+    color:#D9C179
 }
-::-webkit-scrollbar{
+
+.dropdown-menu li:hover {
+    background-color:#3a4a73;
+    color:#D9C179
+}
+
+.menu-item:hover .dropdown-menu {
+    display:block;
+    opacity:1
+}
+
+.menu-container:hover .dropdown-menu {
+    display:block;
+    opacity:1
+}
+
+::-webkit-scrollbar {
     width:12px;
-    background-color:#3A4A73;
+    background-color:#3A4A73
 }
-::-webkit-scrollbar-track{
+
+::-webkit-scrollbar-track {
     border-radius:3px;
-    background-color:transparent;
+    background-color:transparent
 }
-::-webkit-scrollbar-thumb{
+
+::-webkit-scrollbar-thumb {
     border-radius:5px;
     background:linear-gradient(180deg,#3A4A73,#223059);
-    border:2px solid #000;
+    border:2px solid #000
 }
-
