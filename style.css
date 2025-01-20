@@ -386,6 +386,9 @@ footer > ul > li{
     width: auto;
     margin: 0 2em;
 }
+footer div li{
+    line-height: 25px;
+}
 /* Le bouton voir/masquer ses matchs*/
 .button{position:relative;
     display:inline-flex;
