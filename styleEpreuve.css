@@ -633,7 +633,7 @@ button{
     transition: color 0.3s linear;
 }
 
-button{
+button:hover{
     background-color: #223059;
     transition: color 0.3s linear;
 }
