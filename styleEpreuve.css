@@ -508,6 +508,10 @@ a:hover{
     }
 }
 
+nav *{
+    margin: auto;
+}
+
 nav {
     display:flex;
     flex-direction:row;
@@ -518,6 +522,10 @@ nav {
     justify-content:space-around;
     z-index:999
 }
+
+nav > *, nav li{
+    cursor:pointer
+}
     
 nav > p {
     background-color:#223059;
@@ -525,7 +533,6 @@ nav > p {
     color:#f2f2f2;
     padding:7px;
     text-transform:uppercase;
-    cursor:pointer
 }
 
 nav > p:hover {
@@ -546,7 +553,6 @@ nav > p:hover {
 
 .menu-item p {
     color:#F2F2F2;
-    cursor:pointer;
     background-color:#223059;
     border-radius:90px;
     padding:7px;
@@ -568,17 +574,15 @@ nav > p:hover {
     list-style-type:none;
     margin:0;
     border-radius:4px;
-    transition:.3s ease-in-out;
     max-height:280px;
     overflow-y:auto;
-    display:none
+    display:none;
 }
 
 .dropdown-menu li {
     padding:8px 20px;
     border-bottom:1px solid #F2F2F2;
-    cursor:pointer;
-    text-decoration:none
+    text-decoration:none;
 }
 
 .dropdown-menu > li > a {
@@ -618,4 +622,18 @@ nav > p:hover {
     border-radius:5px;
     background:linear-gradient(180deg,#3A4A73,#223059);
     border:2px solid #000
+}
+
+button{
+    background-color: initial;
+    width: fit-content;
+    height: fit-content;
+    border: none;
+    border-radius: 90px;
+    transition: color 0.3s linear;
+}
+
+button{
+    background-color: #223059;
+    transition: color 0.3s linear;
 }
