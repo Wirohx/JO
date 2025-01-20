@@ -28,7 +28,7 @@ main > nav > a{
     cursor:pointer;
     display:flex;
     color:#223059;
-    align-items:center;
+    align-self:center;
 }
 i{
     color: #223059;
@@ -120,6 +120,14 @@ main > table:nth-of-type(1){
 main > table:nth-of-type(1) tr img{
     width: 120px;
     height: 50px;
+}
+
+.match-table tr > th{
+    width: 150px;
+}
+
+.match-table tr > td{
+    height: 100px;
 }
 /* Les cards */
 .card{
@@ -322,58 +330,54 @@ nav > p:hover{
     line-height:1px;
 }
 /* Le footer */
-footer p{
-    position:relative;
-    line-height:.5em;
-    cursor:pointer;
+footer{
+    background-image: url(Images/screenshot_footer_1440.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #F2F2F2;
+    height: 428px;
 }
-footer p span{
-    position:relative;
-    display:inline;
+
+footer *{
+    font-size: 20px;
 }
-footer p span::after{
-    content:'';
-    position:absolute;
-    left:0;
-    bottom:-2px;
-    height:1px;
-    width:0;
-    background-color:#F2F2F2;
-    transition:width .3s ease-in-out;
+
+footer h4{
+    font-size: 24px;
 }
-footer p span:hover::after{
-    width:100%;
+
+footer div{
+    background-color: initial;
+    margin-top: 2em;
+    text-align: left;
 }
-footer > aside:first-child{
-    position:relative;
-    height:fit-content;
-    width:fit-content;
-    left:250px;
-    top:400px;
-    color:#F2F2F2;
+
+footer > div{
+    display: flex;
+    margin: 0 100px;
+    padding: 1.5em 8em;
+    gap: 100px;
 }
-footer > aside:nth-child(2){
-    position:relative;
-    height:fit-content;
-    width:fit-content;
-    left:650px;
-    top:235px;
-    color:#F2F2F2;
+
+footer ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
-footer > aside:last-of-type{
-    position:relative;
-    display:inline-flex;
-    gap:30px;
-    top:375px;
-    left:250px;
-    color:#f2f2f2;
-    margin:0;
+
+footer hr {
+    width: 50em;
+    border: 1px solid #F2F2F2!important;
 }
-footer > hr{
-    position:relative;
-    border:1px solid #F2F2F2!important;
-    width:70%;
-    top:380px;
+
+footer > ul{
+    display: flex;
+    justify-content: center;
+}
+
+footer > ul > li{
+    width: auto;
+    margin: 0 2em;
 }
 /* Le bouton voir/masquer ses matchs*/
 .button{position:relative;
