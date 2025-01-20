@@ -1,0 +1,1574 @@
+@import "https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap";
+
+/* Typographie générale */
+#Discipline * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #D9C179;
+    margin: 0;
+}
+
+#Discipline body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+#Main body,
+#Sportif body{
+    display: flex;
+    justify-content: center;
+    color: #223059;
+}
+
+#Sportif body{
+    background-color:#000;
+    color: initial;
+}
+
+header{
+    background-image: url(Images/screenshot_header_1440.png);
+    background-repeat: no-repeat;
+    padding-top: 207px;
+}
+
+#Sportif table tr > th, 
+h2, 
+h1, 
+h3,
+h4,
+.team > p, 
+.score,nav > p,
+.menu-item p,
+.button{
+    font-family:'Bruno Ace';
+}
+p, 
+#Sportif table tr > td,
+.team span,
+.card h2,
+#Sportif section:nth-of-type(1) > a,
+#Epreuve li{
+    font-family:'Inter';
+}
+
+li, p{
+    font-size: 26px;
+}
+
+h1{
+    font-size: 60px;
+}
+
+#Discipline nav + div > h1{
+    font-family: "Bruno Ace";
+    background-color: #D9C179;
+    border-radius: 90px;
+    text-align: center;
+    padding: 20px 10px;
+    margin: 1em 1em;
+}
+
+
+#Sportif h1{
+    text-align:center;
+    margin:50px;
+}
+
+#Epreuve div > h1 {
+    padding-top: 1em;
+    text-decoration: underline;
+    color: #D9C179;
+}
+
+h2{
+    font-size: 48px;
+}
+
+#Sportif main h2:nth-of-type(2){
+    margin-top:75px;
+}
+
+#Sportif main h2:nth-of-type(2){
+    line-height:1em;
+}
+
+#Sportif main > h2,main a:nth-of-type(1) > img,.align-container > h2{
+    margin-left:75px;
+}
+
+#Main h2{
+    text-transform: uppercase;
+    color: #223059;
+    margin-left: 1em;
+    font-weight: bold;
+}
+
+#Discipline nav + div + section > article > h2{
+    font-family: "Bruno Ace";
+    text-align: center;
+}
+
+/* les titres de niv 2 sauf histoire et regles */
+#Discipline section > h2{
+    font-family: "Bruno Ace";
+    border-bottom: 1px solid black;
+    width: 1370px;
+    margin: 1em auto;
+}
+
+h3{
+    font-size: 40px;
+}
+
+#Main article > h3{
+    font-size: 30px;
+    text-align: center;
+}
+
+h4{
+    font-family: 'Bruno Ace', serif;
+    font-size: 30px;
+}
+
+#Epreuve h4{
+    margin: 1em 0 0 0;
+}
+
+#Epreuve div > article > h4{
+    text-align: center;
+}
+
+main{
+    background-color:#F2F2F2;
+    width:1440px;
+}  
+
+#Sportif section,.match-info,table{
+    margin:auto;
+}
+
+#Epreuve main{
+    margin: auto;
+}
+
+/*icones du titre*/
+#Discipline nav + div > i{
+    color: #D9C179;
+    font-size: 100px;
+}
+/* Stylisation générale du tableau */
+
+#Discipline section + section > aside{
+    width: 1370px;
+    margin: auto;
+}
+
+/*****************************/
+/******* Les sections ********/
+/*****************************/
+
+/* backgroud du histoire et regle */
+#Discipline nav + div + section{
+    background-color: #223059;
+    border-radius: 90px;
+    padding: 2em;
+    display: flex;
+    width: 1370px;
+    margin: auto;
+}
+
+#Epreuve section {
+    width: 1370px;
+    margin: 1em auto;
+}
+
+#Sportif section:nth-of-type(1),
+#Sportif main section:nth-of-type(2){
+    display:flex;
+    flex-direction:row;
+    background-color:#223059;
+    border-radius:45px;
+    justify-content:center;
+    margin:50px auto;
+    color:#fff;
+    width:50%;
+}
+
+#Sportif section:nth-of-type(1){
+    border-radius:45px;
+}
+
+#Sportif section > img{
+    border-radius:90px;
+    margin:50px;
+}
+
+#Sportif section:nth-of-type(1) > a{
+    color:#F2F2F2;
+    font-weight:700;
+    cursor:pointer;
+    margin: 10px 10px;
+    height: 40px;
+}
+
+#Sportif section:nth-of-type(1) > a:focus{
+    color:#D9C179;
+}  
+
+#Sportif main section:nth-of-type(2){
+    display:flex;
+    flex-direction:row;
+    gap:20px;
+    background-color:#223059;
+    color:#D9C179;
+    border-radius:45px;
+    margin-bottom:50px;
+    height:auto;
+    width:50%;
+}
+
+#Sportif main section:nth-of-type(2) h3{
+    text-align:center;
+}
+
+#Epreuve div:not(nav *){
+    border-radius: 90px;
+    text-align: center;
+    margin: 1em auto;
+}
+
+#Main h2 + section{
+    background-color: #223059;
+    border-radius: 90px;
+    padding: 1em;
+    display: flex;
+    margin: auto;
+    font-size: 26px;
+}
+
+/*****************************/
+/********** Articles *********/
+/*****************************/
+
+#Main article{
+    background-color: #D9C179;
+    border-radius: 90px;
+}
+
+#Epreuve div > article{
+    border-radius: 90px;
+    background-color: #D9C179;
+    padding: 1em 2em;
+    margin: 1.5em;
+    text-align: justify;
+    align-content: center;
+}
+
+#Sportif main section:nth-of-type(2) article{
+    flex:1;
+    background-color:#D9C179;
+    color:#000;
+    border-radius:45px;
+    padding:5px;
+    margin:20px;
+    text-align:start;
+    overflow:hidden;
+}
+
+#Sportif section article{
+    align-content:center;
+}
+
+/*les blocks histoire et regles */
+#Discipline nav + div + section > article{
+    background-color: #D9C179;
+    border-radius: 90px;
+    margin: 1em;
+    padding: 2em;
+}
+
+#Main h2  + section > article{
+    background-color: #D9C179;
+    border-radius: 90px;
+    margin: 1em;
+    padding: 2em;
+    width: 50%; 
+}
+
+/*****************************/
+/************ Div ************/
+/*****************************/
+
+#Epreuve section > div{
+    background-color: #223059;
+}
+
+#Epreuve section > div > div{
+    display: flex;
+    padding: 1.5em;
+    margin: auto;
+}
+
+#Discipline nav + div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*****************************/
+/******** Les Tableaux *******/
+/*****************************/
+
+#Discipline section + section > aside > table,
+#Main table{
+    width: 100%;
+    border-spacing: 0 10px;
+    font-family: 'Inter', sans-serif;
+    background-color: #4FB6B5; /* Fond général du tableau */
+    border-radius: 90px; 
+    color: #f2f2f2; 
+    overflow: hidden;
+    padding: 2em;
+}
+
+#Discipline section + section > aside > table thead,
+#Main table thead{
+    text-transform: uppercase;
+    color: white;
+    font-size: 30px;
+    font-family: 'Bruno Ace';
+}
+
+#Discipline section + section > aside > table thead th,
+#Main table thead th{
+    text-align: center;
+}
+
+#Discipline section + section > aside > table tbody tr,
+#Main table tbody tr{
+    background-color: #223059; /* Fond pour les lignes */
+    color: white;
+    margin-bottom: 10px;
+    border-radius: 45px;
+    justify-content: space-between;
+}
+
+#Discipline section + section > aside > table tbody td,
+#Discipline section + section > aside > table thead th,
+#Main table tbody td,
+#Main table thead th{
+    padding: 15px;
+    text-align: center;
+}
+
+#Discipline section + section > aside > table tbody td:first-child,
+#Main table tbody td:first-child{
+    text-align: left;
+}
+
+/* Médailles et icônes */
+#Discipline section + section >  aside > table .fa-solid.fa-medal,
+#Main table .fa-solid.fa-medal{
+    font-size: 30px;
+    margin-right: 5px;
+    color: #f2f2f2; /* Couleur pour l'icône de médaille */
+}
+
+/* Images dans la colonne des pays */
+#Discipline section + section > aside > table tbody img,
+#Main tbody img{
+    height: 40px;
+    width: auto;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+/* Rangée spécifique pour les titres */
+#Discipline section + section > aside > table th:nth-child(1),
+#Main table th:nth-child(1) {
+    text-align: left;
+}
+
+
+#Sportif table tbody{
+    background-color:#fff;
+    border-left:2px solid #000;
+    border-right:2px solid #000;
+    text-align:center;
+}
+
+#Sportif table{
+    border-collapse:collapse;
+}
+
+#Sportif table tr > th,table tr > td{
+    font-size:larger;
+}
+
+#Sportif main > table:nth-of-type(1) th{
+    width: 200px;
+}
+#Sportif main > table:nth-of-type(1) td{
+    height: 100px;
+}
+#Sportif main > table:nth-of-type(1) tr img{
+    width: 120px;
+    height: 50px;
+}
+
+#Epreuve img{
+    height: 100%;
+    border-radius: 90px;
+}
+
+/* Les cards */
+
+#Sportif main hr:nth-of-type(1),
+#Sportif main hr:nth-of-type(2){
+    border:1px solid #000;
+    width:90%
+}
+
+#Sportif a > img:hover{
+    cursor:pointer;
+    transform:scale(1.1);
+}
+
+#Sportif a > img{
+    transition:all .3s ease-in-out;
+    margin:20px;
+}
+
+/*****************************/
+/********* Le footer *********/
+/*****************************/
+
+footer{
+    background-image: url(Images/screenshot_footer_1440.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #F2F2F2;
+    height: 428px;
+}
+
+footer *{
+    font-size: 20px;
+}
+
+footer h4{
+    font-size: 24px;
+}
+
+footer div{
+    background-color: initial;
+    margin-top: 2em;
+    text-align: left;
+}
+
+footer > div{
+    display: flex;
+    margin: 0;
+    padding: 1.5em 8em;
+}
+
+footer ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer hr {
+    width: 50em;
+}
+
+footer > ul{
+    display: flex;
+    justify-content: center;
+}
+
+footer > ul > li{
+    width: auto;
+    margin: 0 2em;
+}
+
+a, a:visited, footer p{
+    cursor: pointer;
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s linear;
+}
+
+a:hover{
+    color: #D9C179;
+}
+
+#portraits > article > a{
+    text-align: center;
+}
+
+#Main figure > img{
+    border-radius: 30px;
+}
+
+#Main iframe{
+    border-radius: 30px;
+}
+
+#Main iframe:hover{
+    transition: 1s ease-in-out;
+    transform: scale(1.05);
+}
+
+#Main iframe > figure > figcaption{
+    background-color: #FFAED4;
+    border-radius: 30px;
+}
+
+#Main img:hover{
+    transition: 1s ease-in-out;
+    transform: scale(1.05);
+}
+
+
+/*****************************/
+/************ IDs ************/
+/*****************************/
+
+/* Tableau des medailles */
+
+#Resultat h2 + hr + h2, 
+#Resultat label + h2{
+    background-color: #1AA3D9;
+    width: 5em;
+    text-align: center;
+    border-radius: 90px;
+}
+
+#Resultat label + h2{
+    background-color: #FFAED4;
+}
+
+#Resultat table{
+    width: 1370px;
+    border-spacing: 0 10px;
+    color: #F2F2F2;
+    cursor:pointer;
+}
+
+#Resultat table th{
+    width: 33%;
+}
+
+#Resultat table img{
+    border-radius: 30px;
+}
+
+#Resultat thead th,
+#Resultat thead + tbody tr > td{
+    background-color: #223059;
+    border-radius: 90px 0 0 90px;
+}
+
+#Resultat label > thead th{
+    padding: 1em;
+}
+
+#Resultat thead th + th,
+#Resultat tbody tr > td + td{
+    border-radius: 0;
+}
+
+#Resultat thead th + th + th,
+#Resultat tbody tr > td + td + td{
+    border-radius: 0 90px 90px 0;
+}
+
+#Resultat thead th > h2{
+    background-color: #C4C0B5;
+    border-radius: 90px;
+    padding: 2em 0;
+    margin: 0.5em auto;
+    width: 95%;
+}
+
+#Resultat thead th + th > h2{
+    background-color: #D9C179;
+    padding: 3em 0;
+}
+
+#Resultat thead th + th + th > h2{
+    background-color: #BA8C0F;
+    padding: 1em 0;
+}
+
+#Resultat thead + tbody tr > td
+{
+    text-align: center;
+}
+
+#tableF, #tableH, #Resultat tbody tr{
+    display: none;
+    transition: all 1s ease-in-out;
+}
+
+#tableF:checked + label tbody tr,
+#tableH:checked + label tbody tr{
+    display: table-row;
+}
+
+/* Explication phase de competition */
+
+#phaseDeCompetition > hr + div{
+    padding: 1em;
+}
+
+#phaseDeCompetition hr + div > h3{
+    background-color: #F2F2F2;
+    width: 14em;
+    border-radius: 90px;
+}
+
+#phaseDeCompetition > div > div{
+    flex-direction: column;
+    text-align: left;
+    padding: 0 2em;
+    margin: 1em;
+}
+
+#phaseDeCompetition div > ul > li {
+    margin: 0.5em 0;
+}
+
+#phaseDeCompetition > hr + div > * {
+    margin-left: 2em;
+}
+
+#phaseDeCompetition h3 + div {
+    background-color: #F2F2F2;
+}
+
+#phaseDeCompetition h3 + div + h3{
+    background-color: #D9C179;
+}
+
+#phaseDeCompetition h3 + div + h3 + div{
+    border-left: 3em ridge #FFAED4;
+    background-color: #FFAED4;
+}
+
+#phaseDeCompetition h3 + div + div{
+    border-left: 3em ridge #1AA3D9;
+    background-color: #1AA3D9;
+}
+
+#phaseDeCompetition div + div + div{
+    border-left: 3em ridge #4FB6B5;
+    background-color: #4FB6B5;
+}
+
+#phaseDeCompetition div + div + div + div{
+    border-left: 3em ridge #D9C179;
+    background-color: #D9C179;
+}
+
+/* Record actuel */
+
+#RecordActuel > div{
+    display: flex;
+    background-color: initial;
+    padding: 0;
+}
+
+#RecordActuel > div > div{
+    background-color: #4FB6B5;
+    text-align: left;
+    margin: 0 1em;
+}
+
+#RecordActuel > div > div > ul{
+    list-style: none;
+    margin: auto;
+}
+
+#RecordActuel > div > div li{
+    margin: 0;
+}
+
+#RecordActuel img{
+    width: 556px;
+    margin: auto;
+}
+
+/* Records precedents */
+
+#recordPrecedents ol{
+    list-style-position: inside;
+    padding: 0;
+}
+
+#recordPrecedents ol li{
+    background-color: #FFAED4;
+    border-radius: 90px;
+    margin: 0.5em 5em;
+    padding: 0 3em;
+}
+
+/* Temps Forts */
+
+#TempsForts div{
+    background-color: initial;
+    display: flex;
+    justify-content: space-between;
+}
+
+#TempsForts img{
+    margin: 0;
+}
+
+#TempsForts div > img{
+    width: 614px;
+}
+
+#TempsForts div img + img{
+    width: 727px;
+}
+
+#citations > article{
+    border-radius: 30px;
+    height: 250px;
+    justify-content: center;
+    margin: auto 25px;
+}
+
+#difBasketFederation {
+    text-align: center;
+}
+
+#difBasketFederation > h2 {
+    text-align: left;
+}
+
+#portraits > article{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: #223059;
+    padding: 2em;
+    width: 1370px;
+    margin: auto;
+    border-radius: 90px;
+}
+
+#portraits > article > a{
+    color: #f2f2f2;
+    text-decoration: none;
+    margin: 1em;
+    padding: 1em;
+    transition: transform 0.3s ease;
+}
+
+#portraits > article > a:hover{
+    color: #f2f2f2;
+    text-decoration: none;
+    background-color: #4FB6B5;
+    border-radius: 90px;
+    color: #223059;
+    transform: scale(1.1);
+}
+
+#bestMoment > article {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; /*aligne les images verticalement */
+    gap: 2em; 
+    width: 1370px;
+    margin: auto;
+}
+
+#bestMoment > article > img {
+    width: 30%;
+    height: 20em; /*fixe une hauteur uniforme */
+    object-fit: cover; /*rognage de l'image pour qu'elle remplisse le conteneur */
+    border-radius: 30px; 
+    transition: transform 0.3s ease; /*effet au survol */
+}
+
+#bestMoment > article > img:hover {
+    transform: scale(1.1); /* Zoom au survol */
+}
+
+#moments{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: #F2F2F2;
+}
+
+#loc{
+    margin: 0 25px;
+    text-align: center;
+    background-color: #1AA3D9;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#citations{
+    height: 345px;
+    background-color: #223059;
+    display: flex;
+    flex-wrap: nowrap;
+    font-size: 26px;
+    border-radius: 90px;
+    margin: 0 25px;
+}
+
+#ceremonie{
+    margin: 0 0 50px 50px;
+    text-align: center;
+    display:flex;
+    flex-direction: row;
+    font-family: "Bruno Ace";
+}
+
+#pres{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: #F2F2F2; 
+}
+
+#Fond{
+    background-color: #223059;
+    border-radius: 90px;
+    width: 1370px;
+    height: 450px;
+    display: flex;
+    flex-direction: row;
+}
+
+/*****************************/
+/********** Classes **********/
+/*****************************/
+
+.match-table tr > th{
+    width: 150px;
+}
+
+.match-table tr > td{
+    height: 100px;
+}
+
+/* Cards */
+
+.card{
+    background:linear-gradient(180deg,#1AA3D9,#223059);
+    border-radius:90px;
+    color:#fff;
+    text-align:center;
+    padding:20px 30px;
+    width:400px;
+    transition:all .3s ease-in-out;
+}
+
+.match-section{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:30px;
+    margin:20px auto;
+}
+
+.match-container{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    flex:1 1 calc(50% - 30px);
+    box-sizing: border-box;
+}
+
+.match-table,table,main section:nth-of-type(2){
+    margin-top:50px;
+}
+
+.card,.match-table,.dropdown-menu{
+    display:none;
+}
+
+.card:hover{
+    cursor:pointer;
+    transform:scale(1.1);
+    z-index:10;
+    box-shadow:10px 10px 20px #4fB6B5;
+}
+
+.card h2{
+    font-size:1.5em;
+    margin-bottom:20px;
+}
+
+.match-info{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+.team{
+    text-align:center;
+}
+
+.team img{
+    width:50px;
+    height:auto;
+    border-radius:5px;
+    margin-bottom:5px;
+}
+
+.team p{
+    font-size:.9em;
+    margin:0;
+}
+
+.team span{
+    font-weight:700;
+    font-size:1em;
+}
+
+.score{
+    display:flex;
+    align-items:center;
+    font-size:1.8em;
+    gap:5px;
+}
+
+.phase{
+    font-size:1em;
+    color:#dcdcdc;
+    margin-top:10px;
+    border-bottom:1px solid #F2F2F2;
+    padding-bottom:5px;
+}
+
+.toggle-matches:hover{
+    cursor:pointer;
+}
+
+.align-container{
+    display:flex;
+    align-items:center;
+    gap:840px;
+}
+
+.align-container > h2{
+    font-size:24px;
+    line-height:1px;
+}
+
+/* Le bouton voir/masquer ses matchs*/
+
+.button{position:relative;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    padding:10px 20px;
+    font-size:16px;
+    border-radius:50px;
+    overflow:hidden;
+    cursor:pointer;
+    left:0;
+}
+
+.button .text{
+    margin-right:40px;
+    position:relative;
+    z-index:2;
+}
+
+.button .circle{
+    position:absolute;
+    right:0;width:40px;
+    height:40px;
+    background-color:#000;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    z-index:1;
+}
+
+.button .circle .arrow{
+    font-size:14px;
+    color:#F2F2F2;
+    z-index:3;
+}
+
+.button:hover{
+    background-color:#000;
+    color:#F2F2F2;
+}
+
+.button:hover .text{
+    color:#F2F2F2;
+}
+
+.button:hover .circle{
+    width:150px;
+    height:50px;
+    right:0;
+    background-color:transparent;
+    border-radius:50px;
+}
+
+.button:hover .circle .arrow{
+    position:absolute;
+    right:10px;
+}
+
+.boutton{
+    display: inline-block;
+    font-family: "Bruno Ace";
+    font-size: 135%;
+    color: #f2f2f2;
+    text-decoration:  none;
+    background-color: #223059;
+    padding: 20px 20px;
+    border-radius: 90px;
+    margin: 0 3em;
+}
+
+/*survole boutton*/
+
+.boutton:hover{
+    color: #D9C179;
+}
+
+.fa-solid.fa-medal {
+    font-size: 30px;
+    margin-right: 5px;
+    color: #f2f2f2; /* Couleur pour l'icône de médaille */
+}
+
+.imagePortrait{
+    width: 50%;
+    border-radius: 90px;
+}
+
+.drapeauPortrait{
+    width: 5em;
+}
+
+/*****************************/
+/********* Nav barre *********/
+/*****************************/
+
+nav *{
+    margin: auto;
+}
+
+nav {
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    position:sticky;
+    top:0;
+    background-color:#D9C179;
+    justify-content:space-around;
+    z-index:999
+}
+
+nav > *, nav li{
+    cursor:pointer
+}
+    
+nav > p {
+    background-color:#223059;
+    border-radius:90px;
+    color:#f2f2f2;
+    padding:7px;
+    text-transform:uppercase;
+}
+
+nav > p:hover {
+    color:#D9C179
+}
+
+.jeux-olympiques {
+    display:flex;
+    justify-content:space-between;
+    color:#F2F2F2
+}
+
+.menu-container {
+    position:relative;
+    display:inline-block;
+    border-radius:5px
+}
+
+.menu-item p {
+    color:#F2F2F2;
+    background-color:#223059;
+    border-radius:90px;
+    padding:7px;
+    text-transform:uppercase
+}
+
+.menu-item p:hover {
+    color:#D9C179
+}
+
+.dropdown-menu {
+    position:absolute;
+    top:100%;
+    left:0;
+    background-color:#223059;
+    color:#fff;
+    width:auto;
+    padding:10px 0;
+    list-style-type:none;
+    margin:0;
+    border-radius:4px;
+    max-height:280px;
+    overflow-y:auto;
+    display:none;
+}
+
+.dropdown-menu li {
+    padding:8px 20px;
+    border-bottom:1px solid #F2F2F2;
+    text-decoration:none;
+}
+
+.dropdown-menu > li > a {
+    color:#fff
+}
+
+.dropdown-menu > li > a:hover {
+    color:#D9C179
+}
+
+.dropdown-menu li:hover {
+    background-color:#3a4a73;
+    color:#D9C179
+}
+
+.menu-item:hover .dropdown-menu {
+    display:block;
+    opacity:1
+}
+
+.menu-container:hover .dropdown-menu {
+    display:block;
+    opacity:1
+}
+
+::-webkit-scrollbar {
+    width:12px;
+    background-color:#3A4A73
+}
+
+::-webkit-scrollbar-track {
+    border-radius:3px;
+    background-color:transparent
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius:5px;
+    background:linear-gradient(180deg,#3A4A73,#223059);
+    border:2px solid #000
+}
+
+button{
+    background-color: initial;
+    width: fit-content;
+    height: fit-content;
+    border: none;
+    border-radius: 90px;
+    transition: color 0.3s linear;
+}
+
+button:hover{
+    background-color: #223059;
+    transition: color 0.3s linear;
+}
+
+/* Les media querys pour le telephone */
+@media screen and (max-width: 1439px){
+    main{
+        width: 428px;
+    }
+
+    header{
+        background-image: url(images/screenshot_header_428.png);
+        background-repeat: no-repeat;
+        padding-top: 100px;
+    }
+
+    li, 
+    p, 
+    #Resultat > table h2,
+    #Resultat > table h3{
+        font-size: 14px;
+    }
+
+    h1{
+        font-size: 28px;
+    }
+    
+    h2{
+        font-size: 24px;
+    }
+    
+    h3{
+        font-size: 20px;
+    }
+    
+    h4{
+        font-size: 17px;
+    }
+
+    #Sportif section {
+        width: 400px;
+        margin: 1em auto;
+    }
+
+    #Sportif div{
+        border-radius: 30px;
+    }
+
+    #Sportif img{
+        border-radius: 10px;
+        width: auto;
+        height: auto;
+    }
+
+    #Main img{
+        width: 380px;
+        height: 220px;
+    }
+
+    #Main figure{
+        margin :auto;
+    }
+
+    #Main h2{
+        text-transform: uppercase;
+        color: #223059;
+        font-family: 'Bruno Ace';font-size: 22px;
+        margin-left: 1em;
+        font-weight: bold;
+        font-size: 24px;
+    }
+
+    #Main iframe{
+        width: 380px;
+        height: 220px;
+    }
+
+    #Discipline nav + div > i {
+        font-size: 0;
+    }
+
+    #Discipline nav + div + section {
+        flex-direction: column;
+        border-radius: 30px;
+        margin: 1em;
+    }
+
+    #Discipline nav + div + section > article {
+        width: 100%;
+        margin: 1em 0;
+        border-radius: 30px;
+    }
+
+    #Discipline section + section > aside{
+        margin: 1em;
+    }
+
+    #Discipline section + section > aside > table {
+        font-size: 0.8em;
+        padding: 1em;
+        border-radius: 30px;
+    }
+
+    #Discipline section + section > aside > table thead th,
+    #Discipline section + section > aside > table tbody td {
+        padding: 10px;
+    }
+
+    #Discipline section + section > aside > table tbody img {
+        height: 1.5em;
+    }
+
+    #Discipline section > h2{
+        margin: 1em 1em;
+    }
+
+    #Sportif a > img{
+        width: 50px;
+        height: 50px;
+    }
+
+    #Sportif section:nth-of-type(1){
+        flex-direction: column;
+        padding: .5em;
+        margin: auto;
+    }
+    #Sportif section:nth-of-type(2){
+        width: 300px;
+    }
+
+    #Sportif section:nth-of-type(1) > article img{
+        height:20px;
+        width: 20px;
+    }
+
+    #Sportif main > table:first-child {
+        width: 100% !important;
+    }
+
+    #Sportif main > table:nth-of-type(1){
+        width: auto;
+    }
+
+    #toggle-matches{
+        width: 20px;
+    }
+
+    .text{
+        display: none;
+    }
+
+    .align-container{
+        gap: 10px;
+    }
+
+    .align-container > h2{
+        font-size: 18px;
+    }
+
+    #portraits > article {
+        margin: 1em;
+        border-radius: 30px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    #portraits > article > a:hover{
+        border-radius: 30px;
+    }
+    
+    .imagePortrait{
+        width: 100%;
+    }
+    
+    .drapeauPortrait{
+        width: 80%;
+        padding: 1em;
+    }
+    #bestMoment > article {
+        margin: auto;
+        width: 90%;
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    #bestMoment > article > img {
+        width: 102%;
+        height: auto;
+    }
+
+    .boutton {
+        display: block;
+        margin: 1em 3em;
+        text-align: center;
+    }
+
+    #Fond{
+        width: 358px;
+        height: 850px;
+        flex-direction: column;
+        font-size: 14px;
+    }
+
+    #moments{
+        flex-direction: column;
+    }
+
+    #pres{
+        flex-direction: column;
+    }
+
+    #citations{
+        height: 1350px;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    #citations > article{
+        height: 15em;
+    }
+
+    #ceremonie{
+        flex-direction: column;
+        font-family: "Bruno Ace";
+        margin:auto;
+    }
+
+    #Fond > article{
+        margin:auto;
+        width: 285px;
+    }
+
+    #loc{
+        margin: auto;
+        width: 420px;
+    }
+
+    #loc > figure{
+        margin: 25px 0;
+    }
+
+    figure{
+        margin: 15px 25px;
+    }
+
+    #loc > figure > img{
+        width: 380px;
+        height: 220px;
+    }
+
+    #Epreuve section {
+        width: 400px;
+        margin: 1em auto;
+    }
+
+    #Epreuve div:not(nav *){
+        border-radius: 30px;
+    }
+
+    #Epreuve img{
+        border-radius: 30px;
+    }
+
+    #Epreuve section > div > div{
+        flex-direction: column;
+        padding: .5em;
+        margin: auto;
+    }
+
+    #Epreuve div > article{
+        border-radius: 30px;
+        padding: 0.5em 1em;
+        margin: 0.5em;
+    }
+
+    #Epreuve section > img {
+        border-radius: 30px;
+        width: 400px;
+    }
+
+    /* Tableau des medailles */
+
+    #Resultat table{
+        width: 400px;
+        border-spacing: 0 5px;
+    }
+
+    #Resultat thead th{
+        border-radius: 30px 0 0 30px;
+    }
+    
+    #Resultat thead th + th + th{
+        border-radius: 0 30px 30px 0;
+    }
+    
+    #Resultat img{
+        width: 50px;
+    }
+
+    #Resultat thead img{
+        width: 70px;
+    }
+
+    #Resultat thead th > h2{
+        padding: 1em 0;
+        border-radius: 30px;
+    }
+    
+    #Resultat thead th + th > h2{
+        padding: 1.5em 0;
+    }
+    
+    #Resultat thead th + th + th > h2{
+        padding: 0.5em 0;
+    }
+
+    /* Explication phase de competition */
+
+    #phaseDeCompetition > div > div{
+        margin: 1em 0;
+        padding: 0 1em;
+    }
+
+    /* Record actuel */
+
+    #RecordActuel > div{
+        flex-direction: column;
+    }
+
+    #RecordActuel > div > div{
+        margin: .5em 0;
+    }
+
+    #RecordActuel img{
+        width: 400px;
+    }
+
+    /* Records precedents */
+
+    #recordPrecedents ol li{
+        border-radius: 30px;
+        margin: 0.5em;
+        padding: 0 1.5em;
+    }
+
+    /* Temps Forts */
+
+    #TempsForts div > img{
+        width: 180px;
+    }
+    
+    #TempsForts div img + img{
+        width: 212px;
+    }
+
+    footer{
+        background-image: url(Images/screenshot_footer_428.png);
+        height: 128px;
+    }
+
+    footer *{
+        font-size: 7px;
+    }
+    
+    footer h4{
+        font-size: 10px;
+    }
+
+    footer div{
+        margin-top: 1.5em;
+    }
+
+    footer > div{
+        padding: 0 4em 0 11em;
+    }
+
+    footer hr {
+        margin: .25em auto;
+    }
+}
