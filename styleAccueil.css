@@ -68,7 +68,7 @@ h2{
 
 #citations > article{
     border-radius: 30px;
-    height: 250px;
+    height: 265px;
     justify-content: center;
     margin: auto 25px;
 }
@@ -131,7 +131,7 @@ article > h3{
 
 
 table{
-    width: 100%;
+    width: 98%;
     border-spacing: 0 10px;
     font-family: 'Inter', sans-serif;
     background-color: #4FB6B5; /* Fond général du tableau */
@@ -498,4 +498,5 @@ footer > hr{
     #citations > article{
         height: 15em;
     }
+
 }
