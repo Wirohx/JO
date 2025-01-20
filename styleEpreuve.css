@@ -106,6 +106,7 @@ div > article > h4{
     width: 1370px;
     border-spacing: 0 10px;
     color: #F2F2F2;
+    cursor:pointer;
 }
 
 #Resultat table th{
@@ -161,6 +162,7 @@ div > article > h4{
 
 #tableF, #tableH, #Resultat tbody tr{
     display: none;
+    transition: all 1s ease-in-out;
 }
 
 #tableF:checked + label tbody tr,
@@ -333,7 +335,7 @@ footer > ul > li{
     margin: 0 2em;
 }
 
-a, a:visited{
+a, a:visited, p{
     color: inherit;
     text-decoration: none;
     transition: color 0.3s linear;
@@ -494,7 +496,7 @@ a:hover{
     }
 
     footer div{
-        margin-top: 2.5em;
+        margin-top: 1.5em;
     }
 
     footer > div{
@@ -508,14 +510,13 @@ a:hover{
 
 /* La barre de navigation*/
 nav{
-    display:inline-flex;
+    display:flex;
     flex-direction:row;
     flex-wrap:wrap;
     position:sticky;
     top:0;
     background-color:#D9C179;
     justify-content:space-around;
-    width:100%;
     z-index:999;
 }
 nav > p{
@@ -527,7 +528,6 @@ nav > p{
 }
 nav > p:hover{
     color:#D9C179;
-    cursor:pointer;
 }
 .jeux-olympiques{
     display:flex;
@@ -556,12 +556,12 @@ nav > p:hover{
     left:0;
     background-color:#223059;
     color:#fff;
-    width:200px;
+    width:auto;
     padding:10px 0;
     list-style-type:none;
     margin:0;
     border-radius:4px;
-    transition:opacity .3s ease-in-out;
+    transition: .3s ease-in-out;
     max-height:280px;
     overflow-y:auto;
     display: none;
@@ -603,3 +603,4 @@ nav > p:hover{
     background:linear-gradient(180deg,#3A4A73,#223059);
     border:2px solid #000;
 }
+
