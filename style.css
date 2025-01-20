@@ -20,9 +20,10 @@ main{
     background-color:#F2F2F2;
     width:1440px;
 }  
-header > img{
-    display:block;
-    margin:auto;
+header{
+    background-image: url(Images/screenshot_header_1440.png);
+    background-repeat: no-repeat;
+    padding-top: 207px;
 }
 main > nav > a{
     cursor:pointer;
@@ -58,8 +59,12 @@ section:nth-of-type(1) > a{
     color:#F2F2F2;
     font-weight:700;
     cursor:pointer;
-    margin: 10px;
-}  
+    margin: 10px 10px;
+    height: 40px;
+}
+section:nth-of-type(1) > a:focus{
+    color:#D9C179;
+}    
 section article{
     align-content:center;
 }
@@ -113,9 +118,11 @@ main h2:nth-of-type(2){
 main > h2,main a:nth-of-type(1) > img,.align-container > h2{
     margin-left:75px;
 }
-main > table:nth-of-type(1){
-    width: 500px;
-    height: 150x;
+main > table:nth-of-type(1) th{
+    width: 200px;
+}
+main > table:nth-of-type(1) td{
+    height: 100px;
 }
 main > table:nth-of-type(1) tr img{
     width: 120px;
